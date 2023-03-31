@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dorjee\\Desktop\\G5DSI\\G5DSI.csproj": {}
+    "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dorjee\\Desktop\\G5DSI\\G5DSI.csproj": {
+    "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dorjee\\Desktop\\G5DSI\\G5DSI.csproj",
+        "projectUniqueName": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
         "projectName": "G5DSI",
-        "projectPath": "C:\\Users\\Dorjee\\Desktop\\G5DSI\\G5DSI.csproj",
-        "packagesPath": "C:\\Users\\Dorjee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dorjee\\Desktop\\G5DSI\\obj\\",
+        "projectPath": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
+        "packagesPath": "C:\\Users\\pmq12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,25 +19,25 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dorjee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pmq12\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "uap10.0.22621"
+          "uap10.0.19041"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "uap10.0.22621": {
+          "uap10.0.19041": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "uap10.0.22621": {
+        "uap10.0.19041": {
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",

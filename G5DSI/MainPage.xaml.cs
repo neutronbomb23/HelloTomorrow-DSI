@@ -16,15 +16,10 @@ using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
-namespace G5DSI
-{
-    /// <summary>
+namespace G5DSI {
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
-    /// </summary>
-    public sealed partial class MainPage : Page
-    {
-        public MainPage()
-        {
+    public sealed partial class MainPage : Page {
+        public MainPage() {
             this.InitializeComponent();
         }
 
@@ -43,8 +38,7 @@ namespace G5DSI
             fadeOutAnimation.Begin();
         }
 
-        private void myTextBlock_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
+        private void myTextBlock_PointerEntered(object sender, PointerRoutedEventArgs e){
             fadeInAnimation.Stop(); // Detener la animación fadeInAnimation si aún está en progreso
             fadeOutAnimation.Begin(); // Comenzar la animación fadeOutAnimation
         }
@@ -53,6 +47,18 @@ namespace G5DSI
         {
             fadeOutAnimation.Stop(); // Detener la animación fadeOutAnimation si aún está en progreso
             fadeInAnimation.Begin(); // Comenzar la animación fadeInAnimation
+        }
+
+        private void PlayButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            fadeInButton1Animation.Stop(); // Detener la animación fadeInAnimation si aún está en progreso
+            fadeOutButton1Animation.Begin(); // Comenzar la animación fadeOutAnimation
+        }
+
+        private void PlayButton_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            fadeOutButton1Animation.Stop(); // Detener la animación fadeOutAnimation si aún está en progreso
+            fadeInButton1Animation.Begin(); // Comenzar la animación fadeInAnimation
         }
 
 

@@ -45,10 +45,13 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Style" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Click" />
+      <RootEvent Name="PointerEntered" />
+      <RootEvent Name="PointerExited" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
       <RootProperty Name="Children" />

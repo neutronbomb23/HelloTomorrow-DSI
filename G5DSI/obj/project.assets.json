@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "UAP,Version=v10.0.22621": {
+    "UAP,Version=v10.0.19041": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -570,7 +570,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-arm": {
+    "UAP,Version=v10.0.19041/win10-arm": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -1318,7 +1318,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-arm-aot": {
+    "UAP,Version=v10.0.19041/win10-arm-aot": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -2067,7 +2067,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-arm64-aot": {
+    "UAP,Version=v10.0.19041/win10-arm64-aot": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -2816,7 +2816,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-x64": {
+    "UAP,Version=v10.0.19041/win10-x64": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -3564,7 +3564,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-x64-aot": {
+    "UAP,Version=v10.0.19041/win10-x64-aot": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -4313,7 +4313,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-x86": {
+    "UAP,Version=v10.0.19041/win10-x86": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -5061,7 +5061,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.22621/win10-x86-aot": {
+    "UAP,Version=v10.0.19041/win10-x86-aot": {
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
         "type": "package",
         "dependencies": {
@@ -10250,23 +10250,23 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.22621": [
+    "UAP,Version=v10.0.19041": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.14"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dorjee\\.nuget\\packages\\": {},
+    "C:\\Users\\pmq12\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dorjee\\Desktop\\G5DSI\\G5DSI.csproj",
+      "projectUniqueName": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
       "projectName": "G5DSI",
-      "projectPath": "C:\\Users\\Dorjee\\Desktop\\G5DSI\\G5DSI.csproj",
-      "packagesPath": "C:\\Users\\Dorjee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dorjee\\Desktop\\G5DSI\\obj\\",
+      "projectPath": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
+      "packagesPath": "C:\\Users\\pmq12\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10274,25 +10274,25 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dorjee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pmq12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "uap10.0.22621"
+        "uap10.0.19041"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "uap10.0.22621": {
+        "uap10.0.19041": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "uap10.0.22621": {
+      "uap10.0.19041": {
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
