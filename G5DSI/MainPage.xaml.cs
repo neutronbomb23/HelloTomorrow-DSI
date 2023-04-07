@@ -61,6 +61,19 @@ namespace G5DSI {
             fadeInButton1Animation.Begin(); // Comenzar la animación fadeInAnimation
         }
 
+        private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            button.Width *= 1.2; // aumenta el tamaño del botón en un 20%
+            button.Height *= 1.2;
+        }
+
+        private void Button_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            button.Width /= 1.2; // devuelve el tamaño original del botón
+            button.Height /= 1.2;
+        }
 
 
         private void Exit_Click(object sender, RoutedEventArgs e)
