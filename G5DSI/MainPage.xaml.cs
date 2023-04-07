@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
@@ -61,19 +62,56 @@ namespace G5DSI {
             fadeInButton1Animation.Begin(); // Comenzar la animación fadeInAnimation
         }
 
-        private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
             Button button = sender as Button;
-            button.Width *= 1.2; // aumenta el tamaño del botón en un 20%
-            button.Height *= 1.2;
+            if (button != null) {
+                // Obtener el RenderTransform del botón y asegurarse de que es un ScaleTransform
+                ScaleTransform scaleTransform = button.RenderTransform as ScaleTransform;
+                if (scaleTransform == null) {
+                    scaleTransform = new ScaleTransform();
+                    button.RenderTransform = scaleTransform;
+                }
+
+                // Crear una animación y agregarla al Storyboard
+                DoubleAnimation anim = new DoubleAnimation();
+                anim.To = 1.15;
+                anim.Duration = TimeSpan.FromSeconds(0.3);
+                Storyboard storyboard = new Storyboard();
+                storyboard.Children.Add(anim);
+                Storyboard.SetTarget(anim, scaleTransform);
+                Storyboard.SetTargetProperty(anim, "ScaleX");
+                Storyboard.SetTargetProperty(anim, "ScaleY");
+
+                // Iniciar la animación del Storyboard
+                storyboard.Begin();
+            }
         }
 
-        private void Button_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
-        {
+        private void Button_PointerExited(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e){
             Button button = sender as Button;
-            button.Width /= 1.2; // devuelve el tamaño original del botón
-            button.Height /= 1.2;
+            if (button != null) {
+                // Obtener el RenderTransform del botón y asegurarse de que es un ScaleTransform
+                ScaleTransform scaleTransform = button.RenderTransform as ScaleTransform;
+                if (scaleTransform == null) {
+                    scaleTransform = new ScaleTransform();
+                    button.RenderTransform = scaleTransform;
+                }
+
+                // Crear una animación y agregarla al Storyboard
+                DoubleAnimation anim = new DoubleAnimation();
+                anim.To = 1;
+                anim.Duration = TimeSpan.FromSeconds(0.3);
+                Storyboard storyboard = new Storyboard();
+                storyboard.Children.Add(anim);
+                Storyboard.SetTarget(anim, scaleTransform);
+                Storyboard.SetTargetProperty(anim, "ScaleX");
+                Storyboard.SetTargetProperty(anim, "ScaleY");
+
+                // Iniciar la animación del Storyboard
+                storyboard.Begin();
+            }
         }
+    
 
 
         private void Exit_Click(object sender, RoutedEventArgs e)

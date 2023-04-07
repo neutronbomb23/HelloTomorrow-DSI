@@ -14,7 +14,7 @@
 
     <Grid>
         <Image x:ConnectionId='2' x:Name="imi" Source="/Assets/moon.jpg"  Stretch="Fill"  />
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="285" Height="245">
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="285" Height="350">
 
             <TextBlock x:ConnectionId='3' x:Name="myTextBlock" Text="DSI PROYECTO FINAL" Foreground="Wheat" Height="41"  FontSize="30" HorizontalAlignment="Center"                                                                                           
                                                     >
@@ -35,7 +35,7 @@
                     </Storyboard>
                 </TextBlock.Resources>
             </TextBlock>
-            <Button x:ConnectionId='4' x:Name= "PlayButton" Content="Play" Foreground="Black" FontSize="30"                    HorizontalAlignment="Center" BorderBrush="Green" Background="LightGreen" Width="208" Height="50" Margin="10"                                                                                    >
+            <Button x:ConnectionId='4' x:Name= "PlayButton" Content="Play" Foreground="Black" FontSize="30"                    HorizontalAlignment="Stretch" BorderBrush="Green" Background="LightGreen" Width="208" Height="50" Margin="10"                                                                                    >
                 <Button.Resources>
                     <Storyboard x:ConnectionId='7' x:Name="fadeOutButton1Animation">
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayButton"
@@ -53,8 +53,8 @@
                     </Storyboard>
                 </Button.Resources>
             </Button>
-            <Button x:ConnectionId='5' Content="Settings" Foreground="Black" FontSize="27"                        HorizontalAlignment="Center" BorderBrush="Yellow" Background="LightYellow" Width="167" Height="50" Margin="10"                                                                             />
-            <Button x:ConnectionId='6' Content="Exit"                    Foreground="Black" FontSize="30" HorizontalAlignment="Center" BorderBrush="Red" Background="LightSalmon" Width="79" Height="50" Margin="10"                                                                             />
+            <Button x:ConnectionId='5' Content="Settings" Foreground="Black" FontSize="27"                        HorizontalAlignment="Stretch" BorderBrush="Yellow" Background="LightYellow" Width="167" Height="50" Margin="10"                                                                             />
+            <Button x:ConnectionId='6' Content="Exit"                    Foreground="Black" FontSize="30" HorizontalAlignment="Stretch" BorderBrush="Red" Background="LightSalmon" Width="79" Height="50" Margin="10"                                                                             />
         </StackPanel>
     </Grid>
 </Page>
