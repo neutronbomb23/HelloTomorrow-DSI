@@ -72,18 +72,29 @@ namespace G5DSI {
                     button.RenderTransform = scaleTransform;
                 }
 
-                // Crear una animación y agregarla al Storyboard
+                // ANIM 1
                 DoubleAnimation anim = new DoubleAnimation();
                 anim.To = 1.15;
-                anim.Duration = TimeSpan.FromSeconds(0.3);
+                anim.Duration = TimeSpan.FromSeconds(0.1);
                 Storyboard storyboard = new Storyboard();
                 storyboard.Children.Add(anim);
                 Storyboard.SetTarget(anim, scaleTransform);
                 Storyboard.SetTargetProperty(anim, "ScaleX");
-                Storyboard.SetTargetProperty(anim, "ScaleY");
 
                 // Iniciar la animación del Storyboard
                 storyboard.Begin();
+
+                // ANIM 2
+                DoubleAnimation anim2 = new DoubleAnimation();
+                anim2.To = 1.15;
+                anim2.Duration = TimeSpan.FromSeconds(0.1);
+                Storyboard storyboard2 = new Storyboard();
+                storyboard2.Children.Add(anim2);
+                Storyboard.SetTarget(anim2, scaleTransform);
+                Storyboard.SetTargetProperty(anim2, "ScaleY");
+
+                // Iniciar la animación del Storyboard
+                storyboard2.Begin();
             }
         }
 
@@ -97,32 +108,40 @@ namespace G5DSI {
                     button.RenderTransform = scaleTransform;
                 }
 
-                // Crear una animación y agregarla al Storyboard
+                // ANIM 1
                 DoubleAnimation anim = new DoubleAnimation();
                 anim.To = 1;
-                anim.Duration = TimeSpan.FromSeconds(0.3);
+                anim.Duration = TimeSpan.FromSeconds(0.1);
                 Storyboard storyboard = new Storyboard();
                 storyboard.Children.Add(anim);
                 Storyboard.SetTarget(anim, scaleTransform);
                 Storyboard.SetTargetProperty(anim, "ScaleX");
-                Storyboard.SetTargetProperty(anim, "ScaleY");
 
                 // Iniciar la animación del Storyboard
                 storyboard.Begin();
+
+                // ANIM 2
+                DoubleAnimation anim2 = new DoubleAnimation();
+                anim2.To = 1;
+                anim2.Duration = TimeSpan.FromSeconds(0.1);
+                Storyboard storyboard2 = new Storyboard();
+                storyboard2.Children.Add(anim2);
+                Storyboard.SetTarget(anim2, scaleTransform);
+                Storyboard.SetTargetProperty(anim2, "ScaleY");
+
+                // Iniciar la animación del Storyboard
+                storyboard2.Begin();
             }
         }
     
 
 
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
+        private void Exit_Click(object sender, RoutedEventArgs e){
             CoreApplication.Exit();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e){
 
         }
-
     }
 }
