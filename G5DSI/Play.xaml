@@ -9,6 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button
+          x:Name="BackButton"
+          Style="{StaticResource NavigationBackButtonNormalStyle}"
+          IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
+           ToolTipService.ToolTip="Back"          
+            VerticalAlignment="Bottom"
+            Foreground="ForestGreen"
+            Width="118"
+            Height="92"
+            FontSize="40px"
+            Background="Transparent" Click="BackButton_Click"
+            />
     </Grid>
 </Page>

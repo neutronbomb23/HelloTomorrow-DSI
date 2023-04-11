@@ -20,11 +20,24 @@ namespace G5DSI
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class Play : Page
-    {
-        public Play()
-        {
+    public sealed partial class Play : Page {
+        public Play() {
             this.InitializeComponent();
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e){
+            Settings.TryGoBack();
+        }
+
+        public static bool TryGoBack()
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (rootFrame.CanGoBack)
+            {
+                rootFrame.GoBack();
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -59,8 +59,7 @@ namespace G5DSI
             imi.Opacity = e.NewValue / 100.0;
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
+        private void BackButton_Click(object sender, RoutedEventArgs e){
             Settings.TryGoBack();
             mediaPlayer.Pause();
         }
@@ -75,8 +74,5 @@ namespace G5DSI
             }
             return false;
         }
-
-
-
     }
 }

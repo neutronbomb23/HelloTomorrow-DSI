@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="G5DSI.Play"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,7 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button x:ConnectionId='2'
+          x:Name="BackButton"
+          Style="{StaticResource NavigationBackButtonNormalStyle}"
+                                                            
+           ToolTipService.ToolTip="Back"          
+            VerticalAlignment="Bottom"
+            Foreground="ForestGreen"
+            Width="118"
+            Height="92"
+            FontSize="40px"
+            Background="Transparent"                         
+            />
     </Grid>
 </Page>
 

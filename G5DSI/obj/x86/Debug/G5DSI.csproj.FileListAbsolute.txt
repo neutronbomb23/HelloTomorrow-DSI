@@ -456,3 +456,8 @@ C:\Users\Msi1\Desktop\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Micros
 C:\Users\Msi1\Desktop\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638017829300000000.json
 C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637934986560000000.json
 C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638017793300000000.json
+C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\Controls.xaml
+C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\Controls.xbf
+C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\Controls.g.i.cs
+C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\Controls.g.cs
+C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Controls.xbf

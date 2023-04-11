@@ -24,9 +24,13 @@ namespace G5DSI {
             this.InitializeComponent();
         }
 
-        private void Settings_Click(object sender, RoutedEventArgs e)
-        {
+        private void Settings_Click(object sender, RoutedEventArgs e) {
             Frame.Navigate(typeof(Settings));
+        }
+
+        private void Controls_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Controls));
         }
 
         private void Play_Click(object sender, RoutedEventArgs e)

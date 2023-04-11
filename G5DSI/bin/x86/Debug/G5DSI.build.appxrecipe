@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\rocket.png">
       <PackagePath>Assets\rocket.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\controls.png">
+      <PackagePath>Assets\controls.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
@@ -73,6 +76,9 @@
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\moon1.jpg">
       <PackagePath>Assets\moon1.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\mando.jpg">
+      <PackagePath>Assets\mando.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\strong.mp3">
       <PackagePath>Assets\strong.mp3</PackagePath>
     </AppxPackagedFile>
@@ -84,6 +90,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Controls.xbf">
+      <PackagePath>Controls.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>

@@ -1,6 +1,8 @@
 WinMetadata\Windows.winmd
 Assets\background.png
+Assets\controls.png
 Assets\LockScreenLogo.scale-200.png
+Assets\mando.jpg
 Assets\moon.jpg
 Assets\moon1.jpg
 Assets\rocket.png
@@ -12,6 +14,7 @@ Assets\StoreLogo.png
 Assets\strong.mp3
 Assets\Wide310x150Logo.scale-200.png
 App.xbf
+Controls.xbf
 G5DSI.xr.xml
 MainPage.xbf
 Play.xbf
