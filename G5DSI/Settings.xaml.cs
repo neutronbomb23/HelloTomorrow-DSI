@@ -56,7 +56,11 @@ namespace G5DSI
 
         private void brillo_Changed_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            imi.Opacity = e.NewValue / 100.0;
+            MG.Opacity = e.NewValue / 100.0;
+            if(MG.Opacity < 0.2)
+            {
+                MG.Opacity = 0.2;
+            }
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e){

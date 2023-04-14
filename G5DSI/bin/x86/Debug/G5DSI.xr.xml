@@ -11,12 +11,16 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Opacity" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -29,9 +33,9 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Resources" />
       <RootEvent Name="Click" />
       <RootEvent Name="PointerEntered" />
@@ -46,16 +50,20 @@
       <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="G5DSI.Controls" />
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="HorizontalAlignment" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Children" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="CanDrag" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
@@ -76,9 +84,8 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Resources" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Resources" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />
