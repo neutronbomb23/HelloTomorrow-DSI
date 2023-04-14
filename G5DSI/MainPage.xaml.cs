@@ -151,6 +151,12 @@ namespace G5DSI {
             CoreApplication.Exit();
         }
 
+        private async void AboutUs_Click(object sender, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("https://github.com/neutronbomb23/HelloTomorrow-DSI/");
+            var success = await Windows.System.Launcher.LaunchUriAsync(uri);
+            // Frame.Navigate(typeof(Play));
+        }
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e){
 
         }

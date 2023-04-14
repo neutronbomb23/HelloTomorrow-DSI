@@ -35,7 +35,7 @@
                 </TextBlock.Resources>
             </TextBlock>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="285" Height="350">
+        <StackPanel VerticalAlignment="Center" Width="285" Height="415" Margin="608,0,607,0">
 
 
             <Button x:Name= "PlayButton" Content="Play" Foreground="Black" FontSize="30" Click="Play_Click" HorizontalAlignment="Center" BorderBrush="Green" Background="LightGreen" Width="208" Height="50" Margin="10" PointerEntered="PlayButton_PointerEntered" PointerExited="PlayButton_PointerExited">
@@ -57,8 +57,9 @@
                 </Button.Resources>
             </Button>
             <Button Content="Settings" Foreground="Black" FontSize="27" Click="Settings_Click" HorizontalAlignment="Center" BorderBrush="Yellow" Background="LightYellow" Width="167" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
-            <Button Content="Controls" Foreground="Black" FontSize="27" Click="Controls_Click" HorizontalAlignment="Center" BorderBrush="Yellow" Background="LightYellow" Width="167" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
+            <Button Content="Controls" Foreground="Black" FontSize="27" Click="Controls_Click" HorizontalAlignment="Center" BorderBrush="BlueViolet" Background="LightBlue" Width="137" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
             <Button Content="Exit" Click="Exit_Click" Foreground="Black" FontSize="30" HorizontalAlignment="Center" BorderBrush="Red" Background="LightSalmon" Width="79" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
+            <Button Content="About us" Click="AboutUs_Click" Foreground="Black" FontSize="30" HorizontalAlignment="Center" BorderBrush="DeepPink" Background="HotPink" Width="161" Height="54" Margin="40"/>
         </StackPanel>
     </Grid>
 </Page>
