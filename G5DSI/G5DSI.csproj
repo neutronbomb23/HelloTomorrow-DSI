@@ -146,6 +146,7 @@
     <Content Include="Assets\moon.jpg" />
     <Content Include="Assets\moon1.jpg" />
     <Content Include="Assets\rocket.png" />
+    <Content Include="Assets\space.mp3" />
     <Content Include="Assets\strong.mp3" />
     <Content Include="Assets\controls.png" />
     <Content Include="Assets\mando.jpg" />

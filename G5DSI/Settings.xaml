@@ -17,7 +17,7 @@
             <TextBlock Text="Volume" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
             <Slider x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500" ValueChanged="slider_ValueChanged" />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:Name="brillo_Changed" Minimum="0" Maximum="100" Value="50" Width="500" ValueChanged="brillo_Changed_ValueChanged" />
+            <Slider x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500" ValueChanged="brillo_Changed_ValueChanged" />
         </StackPanel>
         <Button
           x:Name="BackButton"

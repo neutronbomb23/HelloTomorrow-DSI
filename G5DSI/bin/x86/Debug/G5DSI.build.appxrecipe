@@ -79,6 +79,9 @@
     <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\mando.jpg">
       <PackagePath>Assets\mando.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\space.mp3">
+      <PackagePath>Assets\space.mp3</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\strong.mp3">
       <PackagePath>Assets\strong.mp3</PackagePath>
     </AppxPackagedFile>

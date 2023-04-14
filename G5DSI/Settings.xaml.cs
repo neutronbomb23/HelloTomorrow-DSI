@@ -27,30 +27,31 @@ namespace G5DSI
     /// </summary>
     public sealed partial class Settings : Page
     {
-        MediaPlayer mediaPlayer = new MediaPlayer();
+        MediaPlayer mediaPlayer = new MediaPlayer();  
+        MainPage mainPage;
         private BitmapImage customCursorImage;
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
             customCursorImage = new BitmapImage(new Uri("ms-appx:///Assets/rocket.png"));
         }
 
 
         public Settings()
         {
-
             this.InitializeComponent();
-            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/strong.mp3"));
+            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/space.mp3"));
             mediaPlayer.Play();
-            mediaPlayer.Volume = 0.0;
+            mediaPlayer.Volume = 0.5;
             //Cargo canción
         }
 
         private void slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             mediaPlayer.Volume = e.NewValue / 100.0;
+         
+          
         }
 
 
@@ -61,6 +62,7 @@ namespace G5DSI
             {
                 MG.Opacity = 0.2;
             }
+           //mainPage.Opacity = MG.Opacity;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e){

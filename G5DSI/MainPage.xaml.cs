@@ -6,6 +6,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media.Core;
+using Windows.Media.Playback;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,12 +22,18 @@ using Windows.UI.Xaml.Navigation;
 namespace G5DSI {
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     public sealed partial class MainPage : Page {
+
+        MediaPlayer mediaPlayer = new MediaPlayer();
         public MainPage() {
             this.InitializeComponent();
+            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/space.mp3"));
+            mediaPlayer.Play();
+            mediaPlayer.Volume = 0.5;
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e) {
             Frame.Navigate(typeof(Settings));
+            mediaPlayer.Pause();
         }
 
         private void Controls_Click(object sender, RoutedEventArgs e)

@@ -17,7 +17,7 @@
             <TextBlock Text="Volume" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
             <Slider x:ConnectionId='5' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='6' x:Name="brillo_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                            />
+            <Slider x:ConnectionId='6' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
         </StackPanel>
         <Button x:ConnectionId='4'
           x:Name="BackButton"
