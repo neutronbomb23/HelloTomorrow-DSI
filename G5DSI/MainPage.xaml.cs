@@ -66,13 +66,18 @@ namespace G5DSI {
             fadeInButton1Animation.Begin(); // Comenzar la animación fadeInAnimation
         }
 
-        private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e) {
+        private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
             Button button = sender as Button;
-            if (button != null) {
+            if (button != null)
+            {
                 // Obtener el RenderTransform del botón y asegurarse de que es un ScaleTransform
                 ScaleTransform scaleTransform = button.RenderTransform as ScaleTransform;
-                if (scaleTransform == null) {
-                    scaleTransform = new ScaleTransform();
+                if (scaleTransform == null)
+                {
+                    // Configurar el ScaleTransform para que el botón comience en tamaño 1 y centrado
+                    scaleTransform = new ScaleTransform() { CenterX = 0.5, CenterY = 0.5 };
+                    button.RenderTransformOrigin = new Point(0.5, 0.5);
                     button.RenderTransform = scaleTransform;
                 }
 
@@ -85,9 +90,6 @@ namespace G5DSI {
                 Storyboard.SetTarget(anim, scaleTransform);
                 Storyboard.SetTargetProperty(anim, "ScaleX");
 
-                // Iniciar la animación del Storyboard
-                storyboard.Begin();
-
                 // ANIM 2
                 DoubleAnimation anim2 = new DoubleAnimation();
                 anim2.To = 1.15;
@@ -97,7 +99,12 @@ namespace G5DSI {
                 Storyboard.SetTarget(anim2, scaleTransform);
                 Storyboard.SetTargetProperty(anim2, "ScaleY");
 
+                // Ajustar las animaciones para que se expanda en todas las direcciones
+                anim.From = anim2.From = 1;
+                anim.To = anim2.To = 1.15;
+
                 // Iniciar la animación del Storyboard
+                storyboard.Begin();
                 storyboard2.Begin();
             }
         }
