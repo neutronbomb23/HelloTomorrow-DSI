@@ -9,12 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:ConnectionId='2'
+
+        <Button x:ConnectionId='2' Width="108" Height="108" Background="LightGreen" Margin="10,0,0,10" VerticalAlignment="Bottom"                   />
+        
+        <Button x:ConnectionId='3'
           x:Name="BackButton"
           Style="{StaticResource NavigationBackButtonNormalStyle}"
                                                             
            ToolTipService.ToolTip="Back"          
-            VerticalAlignment="Bottom"
+            VerticalAlignment="Top"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
