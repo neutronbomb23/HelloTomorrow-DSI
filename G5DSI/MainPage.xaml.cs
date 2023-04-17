@@ -24,11 +24,23 @@ namespace G5DSI {
     public sealed partial class MainPage : Page {
 
         MediaPlayer mediaPlayer = new MediaPlayer();
+
         public MainPage() {
             this.InitializeComponent();
             mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/space.mp3"));
             mediaPlayer.Play();
             mediaPlayer.Volume = 0.5;
+        }
+        private void InvertColorsButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.RequestedTheme == ElementTheme.Dark)
+            {
+                this.RequestedTheme = ElementTheme.Light;
+            }
+            else
+            {
+                this.RequestedTheme = ElementTheme.Dark;
+            }
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e) {
@@ -40,6 +52,7 @@ namespace G5DSI {
         {
             Frame.Navigate(typeof(Controls));
         }
+
 
         private void Play_Click(object sender, RoutedEventArgs e)
         { 

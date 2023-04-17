@@ -17,11 +17,12 @@
                                                             
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
+            Background="Transparent"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
             FontSize="40px"
-            Background="Transparent"                         
+                                    
             />
     </Grid>
 </Page>

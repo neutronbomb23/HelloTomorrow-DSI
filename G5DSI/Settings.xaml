@@ -18,6 +18,8 @@
             <Slider x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500" ValueChanged="slider_ValueChanged" />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
             <Slider x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500" ValueChanged="brillo_Changed_ValueChanged" />
+            <ListView x:Name="ListViewSongs" Visibility="Collapsed"/>
+
         </StackPanel>
         
         <Button
@@ -26,12 +28,19 @@
           IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
-            Background="LightGreen"
+            Background="Transparent"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
             FontSize="40px"
             Click="BackButton_Click"
             />
+        <Button x:Name="ElegirCancionButton"
+        Content="Elegir canción"
+        Click="ElegirCancionButton_Click"
+        Width="118"
+        Height="150"
+        FontSize="40px"/>
+
     </Grid>
 </Page>

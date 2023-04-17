@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="G5DSI.Shop"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -14,7 +14,7 @@
                 <TextBlock Text="SHOP" FontSize="30" Foreground="Black" HorizontalAlignment="Center"/>
             </Pivot.Title>
             
-            <PivotItem Background="DeepSkyBlue">
+            <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="PeopleIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
@@ -36,7 +36,7 @@
             </PivotItem>
 
             
-            <PivotItem Background="Bisque">
+            <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="ElectricityIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
@@ -58,7 +58,7 @@
             </PivotItem>
 
             
-            <PivotItem Background="Lavender">
+            <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="WaterIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
@@ -80,7 +80,7 @@
             </PivotItem>
             
             
-            <PivotItem Background="Firebrick">
+            <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="MiningIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
@@ -102,7 +102,7 @@
             </PivotItem>
             
             
-            <PivotItem Background="Red">
+            <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="MilitarIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
@@ -123,6 +123,20 @@
                 </StackPanel>
             </PivotItem>
         </Pivot>
+
+        <Button x:ConnectionId='2'
+          x:Name="BackButton"
+          Style="{StaticResource NavigationBackButtonNormalStyle}"
+                                                            
+           ToolTipService.ToolTip="Back"          
+            VerticalAlignment="Bottom"
+            Background="LightGreen"
+            Foreground="ForestGreen"
+            Width="118"
+            Height="92"
+            FontSize="40px"
+                                    
+            />
     </Grid>
 </Page>
 
