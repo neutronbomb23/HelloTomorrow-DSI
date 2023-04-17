@@ -11,26 +11,38 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:ConnectionId='2' x:Name="MG" Opacity="1">
-        <Image x:ConnectionId='3' x:Name="imi" Source="/Assets/moon1.jpg" Stretch="Fill" Opacity="0.5"/>       
- 
+        <Image x:ConnectionId='3' x:Name="imi" Source="/Assets/moon1.jpg" Stretch="Fill" Opacity="0.5"/>
+
         <StackPanel>
             <TextBlock Text="Volume" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='5' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
+            <Slider x:ConnectionId='6' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='6' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
+            <Slider x:ConnectionId='7' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
+            <ListView x:ConnectionId='8' x:Name="ListViewSongs" Visibility="Collapsed"/>
+
         </StackPanel>
+
         <Button x:ConnectionId='4'
           x:Name="BackButton"
           Style="{StaticResource NavigationBackButtonNormalStyle}"
                                                             
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
+            Background="Transparent"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
             FontSize="40px"
-            Background="Transparent"                         
+                                    
             />
+        <Button x:ConnectionId='5' x:Name="ElegirCancionButton" HorizontalAlignment="Center"
+        Content="Elegir canción"
+        Background="Transparent"
+                                         
+        Width="353"
+        Height="70"
+        FontSize="40px"/>
+
     </Grid>
 </Page>
 

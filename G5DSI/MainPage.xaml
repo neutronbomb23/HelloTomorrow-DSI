@@ -24,9 +24,9 @@
         </Grid.ColumnDefinitions>
 
         <Image x:Name="imi" Source="/Assets/moon.jpg"  Stretch="Fill"  Margin="0,0,10,0"/>
-        <StackPanel>
+        <StackPanel IsTapEnabled="False">
             <TextBlock x:Name="myTextBlock" Text="HELLO TOMORROW" Foreground="Wheat"  FontSize="70" SelectionChanged="TextBlock_SelectionChanged"  PointerEntered="myTextBlock_PointerEntered"
-           PointerExited="myTextBlock_PointerExited" HorizontalAlignment="Center">
+           PointerExited="myTextBlock_PointerExited" HorizontalAlignment="Center" IsTapEnabled="False">
                 <TextBlock.Resources>
                     <Storyboard x:Name="fadeOutAnimation">
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="myTextBlock"
@@ -45,7 +45,7 @@
                 </TextBlock.Resources>
             </TextBlock>
         </StackPanel>
-        <StackPanel VerticalAlignment="Center" Height="283"  >
+        <StackPanel VerticalAlignment="Center" Height="410"  >
 
 
             <Button x:Name= "PlayButton" Content="Play" Foreground="Black" FontSize="30" Click="Play_Click" HorizontalAlignment="Center" BorderBrush="Green" Background="LightGreen"  Margin="10" PointerEntered="PlayButton_PointerEntered" PointerExited="PlayButton_PointerExited">
@@ -69,7 +69,7 @@
             <Button Content="Settings" Foreground="Black" FontSize="27" Click="Settings_Click" HorizontalAlignment="Center" BorderBrush="Yellow" Background="LightYellow" Width="167" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
             <Button Content="Controls" Foreground="Black" FontSize="27" Click="Controls_Click" HorizontalAlignment="Center" BorderBrush="BlueViolet" Background="LightBlue" Width="137" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
             <Button Content="Exit" Click="Exit_Click" Foreground="Black" FontSize="30" HorizontalAlignment="Center" BorderBrush="Red" Background="LightSalmon" Width="79" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
+            <HyperlinkButton x:Name="Control1" Content="Microsoft home page" Margin="30" NavigateUri="http://www.microsoft.com" IsEnabled="True" HorizontalAlignment="Center" Foreground="White"/>
         </StackPanel>
-        <Button Content="About us" Click="AboutUs_Click" Foreground="Black" FontSize="30" BorderBrush="DeepPink" Background="HotPink" Width="205" Height="54" Margin="98,36,0,0" VerticalAlignment="Top" />
     </Grid>
 </Page>
