@@ -14,6 +14,7 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="Background" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
     </RootType>
@@ -22,6 +23,8 @@
       <RootProperty Name="Stretch" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Opacity" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Style" />
@@ -105,6 +108,7 @@
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Background" />
       <RootProperty Name="Header" />
       <RootProperty Name="Content" />
     </RootType>

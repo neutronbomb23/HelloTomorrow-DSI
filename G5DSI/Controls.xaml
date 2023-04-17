@@ -17,11 +17,12 @@
           IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
+            Background="LightGreen"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
             FontSize="40px"
-            Background="Transparent" Click="BackButton_Click"
+            Click="BackButton_Click"
             />
     </Grid>
 </Page>

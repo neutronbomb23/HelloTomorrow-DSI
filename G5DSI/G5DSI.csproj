@@ -11,7 +11,7 @@
     <AssemblyName>G5DSI</AssemblyName>
     <DefaultLanguage>es-ES</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.22621.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -150,6 +150,18 @@
     <Content Include="Assets\strong.mp3" />
     <Content Include="Assets\controls.png" />
     <Content Include="Assets\mando.jpg" />
+    <Content Include="background.png" />
+    <Content Include="controls.png" />
+    <Content Include="ElectricityIcon.jpg" />
+    <Content Include="ElectricityIcon.png" />
+    <Content Include="LockScreenLogo.scale-200.png" />
+    <Content Include="mando.jpg" />
+    <Content Include="MilitarIcon.png" />
+    <Content Include="MineralIcon.png" />
+    <Content Include="MiningIcon.png" />
+    <Content Include="moon.jpg" />
+    <Content Include="moon1.jpg" />
+    <Content Include="PeopleIcon.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -158,6 +170,16 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="rocket.png" />
+    <Content Include="space.mp3" />
+    <Content Include="SplashScreen.scale-200.png" />
+    <Content Include="Square150x150Logo.scale-200.png" />
+    <Content Include="Square44x44Logo.scale-200.png" />
+    <Content Include="Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="StoreLogo.png" />
+    <Content Include="strong.mp3" />
+    <Content Include="WaterIcon.png" />
+    <Content Include="Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

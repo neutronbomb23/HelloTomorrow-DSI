@@ -8,33 +8,134 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Pivot Title="SHOP">
-            <PivotItem Header="ELECTRICITY">
-                <StackPanel x:Name="MiStack" Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+    <Grid Background="LightSteelBlue">
+        <Pivot>
+            <Pivot.Title>
+                <TextBlock Text="SHOP" FontSize="30" Foreground="Black" HorizontalAlignment="Center"/>
+            </Pivot.Title>
+            
+            <PivotItem Background="LightBlue">
+                <PivotItem.Header>
+                    <Image Source="PeopleIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </PivotItem.Header>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
-                        <TextBlock Text="Generador Electrico" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="/Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
-                        <TextBlock Text="Generador++" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="/Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
-                        <TextBlock Text="Repetidor" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="/Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
-            <PivotItem Header="WATER">
-                <TextBlock Text="WAT" />
+
+            
+            <PivotItem Background="LightBlue">
+                <PivotItem.Header>
+                    <Image Source="ElectricityIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </PivotItem.Header>
+                
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="Generador Electrico" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="Generador++" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="Repetidor" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                </StackPanel>
             </PivotItem>
-            <PivotItem Header="MINERAL">
-                <TextBlock Text="MIN" />
+
+            
+            <PivotItem Background="LightBlue">
+                <PivotItem.Header>
+                    <Image Source="WaterIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </PivotItem.Header>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                </StackPanel>
             </PivotItem>
-            <PivotItem Header="MILITAR">
-                <TextBlock Text="MIL" />
+            
+            
+            <PivotItem Background="LightBlue">
+                <PivotItem.Header>
+                    <Image Source="MiningIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </PivotItem.Header>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                </StackPanel>
+            </PivotItem>
+            
+            
+            <PivotItem Background="LightBlue">
+                <PivotItem.Header>
+                    <Image Source="MilitarIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </PivotItem.Header>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                    </StackPanel>
+                </StackPanel>
             </PivotItem>
         </Pivot>
+
+        <Button
+          x:Name="BackButton"
+          Style="{StaticResource NavigationBackButtonNormalStyle}"
+          IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
+           ToolTipService.ToolTip="Back"          
+            VerticalAlignment="Bottom"
+            Background="LightGreen"
+            Foreground="ForestGreen"
+            Width="118"
+            Height="92"
+            FontSize="40px"
+            Click="BackButton_Click"
+            />
     </Grid>
 </Page>

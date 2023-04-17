@@ -19,17 +19,19 @@
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
             <Slider x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500" ValueChanged="brillo_Changed_ValueChanged" />
         </StackPanel>
+        
         <Button
           x:Name="BackButton"
           Style="{StaticResource NavigationBackButtonNormalStyle}"
           IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
+            Background="LightGreen"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
             FontSize="40px"
-            Background="Transparent" Click="BackButton_Click"
+            Click="BackButton_Click"
             />
     </Grid>
 </Page>
