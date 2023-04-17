@@ -15,33 +15,22 @@
  
         <StackPanel>
             <TextBlock Text="Volume" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='6' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
+            <Slider x:ConnectionId='5' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='7' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
-            <ListView x:ConnectionId='8' x:Name="ListViewSongs" Visibility="Collapsed"/>
-
+            <Slider x:ConnectionId='6' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
         </StackPanel>
-        
         <Button x:ConnectionId='4'
           x:Name="BackButton"
           Style="{StaticResource NavigationBackButtonNormalStyle}"
                                                             
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
-            Background="Transparent"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
             FontSize="40px"
-                                    
+            Background="Transparent"                         
             />
-        <Button x:ConnectionId='5' x:Name="ElegirCancionButton"
-        Content="Elegir canción"
-                                         
-        Width="118"
-        Height="150"
-        FontSize="40px"/>
-
     </Grid>
 </Page>
 

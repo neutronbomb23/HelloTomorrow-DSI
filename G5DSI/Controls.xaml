@@ -17,7 +17,7 @@
           IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
-            Background="Transparent"
+            Background="LightGreen"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
