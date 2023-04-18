@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -30,9 +32,6 @@ namespace G5DSI
             Frame.Navigate(typeof(Shop));
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e){
-            Settings.TryGoBack();
-        }
 
         public static bool TryGoBack()
         {
@@ -43,6 +42,31 @@ namespace G5DSI
                 return true;
             }
             return false;
+        }
+
+        private async void ElegirCancionButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new ContentDialog
+            {
+                Title = "Acciones",            
+                PrimaryButtonText = "Settings",
+                SecondaryButtonText = "Controls",
+                CloseButtonText = "Menu"
+            };
+
+            var result = await dialog.ShowAsync();
+            if (result == ContentDialogResult.Primary)
+            {
+                Frame.Navigate(typeof(Settings));
+            }
+            else if (result == ContentDialogResult.Secondary)
+            {
+                Frame.Navigate(typeof(Controls));
+            }
+            else
+            {
+                Frame.Navigate(typeof(MainPage));
+            }
         }
     }
 }

@@ -9,20 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
-        <Button Width="108" Height="108" Background="LightGreen" Margin="10,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click"/>
-        
-        <Button
-          x:Name="BackButton"
-          Style="{StaticResource NavigationBackButtonNormalStyle}"
-          IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
-           ToolTipService.ToolTip="Back"          
-            VerticalAlignment="Top"
-            Foreground="ForestGreen"
-            Width="118"
-            Height="92"
-            FontSize="40px"
-            Background="Transparent" Click="BackButton_Click"
-            />
+        <Image Source="playBackground.png" Stretch="Fill" />
+        <Button Width="108" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click"/>
+        <Button x:Name="ElegirCancionButton" HorizontalAlignment="Right"
+        VerticalAlignment="Top" Content="ATAJOS"
+        Background="Transparent"
+        Click="ElegirCancionButton_Click"
+        Width="353"
+        Height="70"
+        FontSize="40px"/>
     </Grid>
 </Page>

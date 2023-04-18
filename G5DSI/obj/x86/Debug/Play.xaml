@@ -1,4 +1,4 @@
-﻿<Page x:ConnectionId='1'
+﻿<Page
     x:Class="G5DSI.Play"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,21 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
-        <Button x:ConnectionId='2' Width="108" Height="108" Background="LightGreen" Margin="10,0,0,10" VerticalAlignment="Bottom"                   />
-        
-        <Button x:ConnectionId='3'
-          x:Name="BackButton"
-          Style="{StaticResource NavigationBackButtonNormalStyle}"
-                                                            
-           ToolTipService.ToolTip="Back"          
-            VerticalAlignment="Top"
-            Foreground="ForestGreen"
-            Width="118"
-            Height="92"
-            FontSize="40px"
-            Background="Transparent"                         
-            />
+        <Image Source="playBackground.png" Stretch="Fill" />
+        <Button x:ConnectionId='2' Width="108" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom"                   />
+        <Button x:ConnectionId='3' x:Name="ElegirCancionButton" HorizontalAlignment="Right"
+        VerticalAlignment="Top" Content="ATAJOS"
+        Background="Transparent"
+                                         
+        Width="353"
+        Height="70"
+        FontSize="40px"/>
     </Grid>
 </Page>
 

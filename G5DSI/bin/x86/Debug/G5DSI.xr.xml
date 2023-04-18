@@ -73,6 +73,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="NavigateUri" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="HorizontalAlignment" />
@@ -98,6 +99,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsTapEnabled" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Resources" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="PointerEntered" />

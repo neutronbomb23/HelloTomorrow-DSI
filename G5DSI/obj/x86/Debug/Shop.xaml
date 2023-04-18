@@ -19,10 +19,10 @@
                     <Image Source="PeopleIcon.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue" IsTapEnabled="True">
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
@@ -130,7 +130,7 @@
                                                             
            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
-            Background="LightGreen"
+            Background="Transparent"
             Foreground="ForestGreen"
             Width="118"
             Height="92"
