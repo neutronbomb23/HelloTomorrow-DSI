@@ -143,6 +143,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\background.png" />
+    <Content Include="Assets\Icons\Electricity.png" />
+    <Content Include="Assets\Icons\Militar.png" />
+    <Content Include="Assets\Icons\Mining.png" />
+    <Content Include="Assets\Icons\People.png" />
+    <Content Include="Assets\Icons\Water.png" />
     <Content Include="Assets\moon.jpg" />
     <Content Include="Assets\moon1.jpg" />
     <Content Include="Assets\rocket.png" />
@@ -151,24 +156,19 @@
     <Content Include="Assets\controls.png" />
     <Content Include="background.png" />
     <Content Include="controls.png" />
-    <Content Include="Electricity.png" />
     <Content Include="ElectricityIcon.png" />
     <Content Include="mando.jpg" />
-    <Content Include="Militar.png" />
     <Content Include="MilitarIcon.png" />
     <Content Include="MineralIcon.png" />
-    <Content Include="Mining.png" />
     <Content Include="MiningIcon.png" />
     <Content Include="moon.jpg" />
     <Content Include="moon1.jpg" />
-    <Content Include="People.png" />
     <Content Include="PeopleIcon.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="rocket.png" />
     <Content Include="space.mp3" />
     <Content Include="strong.mp3" />
-    <Content Include="Water.png" />
     <Content Include="WaterIcon.png" />
   </ItemGroup>
   <ItemGroup>

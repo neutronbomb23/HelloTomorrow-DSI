@@ -37,6 +37,21 @@
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\background.png">
       <PackagePath>Assets\background.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Electricity.png">
+      <PackagePath>Assets\Icons\Electricity.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Militar.png">
+      <PackagePath>Assets\Icons\Militar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Mining.png">
+      <PackagePath>Assets\Icons\Mining.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\People.png">
+      <PackagePath>Assets\Icons\People.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Water.png">
+      <PackagePath>Assets\Icons\Water.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\rocket.png">
       <PackagePath>Assets\rocket.png</PackagePath>
     </AppxPackagedFile>
@@ -49,14 +64,8 @@
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\controls.png">
       <PackagePath>controls.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Electricity.png">
-      <PackagePath>Electricity.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\ElectricityIcon.png">
       <PackagePath>ElectricityIcon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Militar.png">
-      <PackagePath>Militar.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MilitarIcon.png">
       <PackagePath>MilitarIcon.png</PackagePath>
@@ -64,14 +73,8 @@
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MineralIcon.png">
       <PackagePath>MineralIcon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Mining.png">
-      <PackagePath>Mining.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MiningIcon.png">
       <PackagePath>MiningIcon.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\People.png">
-      <PackagePath>People.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\PeopleIcon.png">
       <PackagePath>PeopleIcon.png</PackagePath>
@@ -82,9 +85,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\rocket.png">
       <PackagePath>rocket.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Water.png">
-      <PackagePath>Water.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\WaterIcon.png">
       <PackagePath>WaterIcon.png</PackagePath>

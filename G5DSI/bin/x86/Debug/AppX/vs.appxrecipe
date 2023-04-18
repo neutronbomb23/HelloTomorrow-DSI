@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-18T14:43:24.614</Modified>
+      <Modified>2023-04-18T16:27:15.733</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\G5DSI.exe">
       <PackagePath>entrypoint\G5DSI.exe</PackagePath>
-      <Modified>2023-04-18T14:43:23.692</Modified>
+      <Modified>2023-04-18T16:27:13.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -48,59 +48,63 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\background.png">
       <PackagePath>Assets\background.png</PackagePath>
-      <Modified>2023-04-16T23:57:34.055</Modified>
+      <Modified>2023-04-17T00:12:30.885</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Electricity.png">
+      <PackagePath>Assets\Icons\Electricity.png</PackagePath>
+      <Modified>2023-04-18T15:01:23.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Militar.png">
+      <PackagePath>Assets\Icons\Militar.png</PackagePath>
+      <Modified>2023-04-18T15:01:23.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Mining.png">
+      <PackagePath>Assets\Icons\Mining.png</PackagePath>
+      <Modified>2023-04-18T15:01:23.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\People.png">
+      <PackagePath>Assets\Icons\People.png</PackagePath>
+      <Modified>2023-04-18T15:01:23.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Water.png">
+      <PackagePath>Assets\Icons\Water.png</PackagePath>
+      <Modified>2023-04-18T15:01:23.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\rocket.png">
       <PackagePath>Assets\rocket.png</PackagePath>
-      <Modified>2023-04-16T23:57:34.124</Modified>
+      <Modified>2023-04-17T00:12:30.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\controls.png">
       <PackagePath>Assets\controls.png</PackagePath>
-      <Modified>2023-04-16T23:57:34.081</Modified>
+      <Modified>2023-04-17T00:12:30.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\background.png">
       <PackagePath>background.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.885</Modified>
+      <Modified>2023-04-18T15:01:23.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\controls.png">
       <PackagePath>controls.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.890</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Electricity.png">
-      <PackagePath>Electricity.png</PackagePath>
-      <Modified>2023-04-18T14:20:14.748</Modified>
+      <Modified>2023-04-18T15:01:23.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\ElectricityIcon.png">
       <PackagePath>ElectricityIcon.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.893</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Militar.png">
-      <PackagePath>Militar.png</PackagePath>
-      <Modified>2023-04-18T14:20:14.750</Modified>
+      <Modified>2023-04-18T15:01:23.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MilitarIcon.png">
       <PackagePath>MilitarIcon.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.899</Modified>
+      <Modified>2023-04-18T15:01:23.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MineralIcon.png">
       <PackagePath>MineralIcon.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.903</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Mining.png">
-      <PackagePath>Mining.png</PackagePath>
-      <Modified>2023-04-18T14:20:14.751</Modified>
+      <Modified>2023-04-18T15:01:23.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MiningIcon.png">
       <PackagePath>MiningIcon.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.906</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\People.png">
-      <PackagePath>People.png</PackagePath>
-      <Modified>2023-04-18T14:20:14.752</Modified>
+      <Modified>2023-04-18T15:01:23.771</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\PeopleIcon.png">
       <PackagePath>PeopleIcon.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.915</Modified>
+      <Modified>2023-04-18T15:01:23.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
@@ -109,51 +113,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\rocket.png">
       <PackagePath>rocket.png</PackagePath>
-      <Modified>2023-04-17T00:12:30.918</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Water.png">
-      <PackagePath>Water.png</PackagePath>
-      <Modified>2023-04-18T14:20:14.754</Modified>
+      <Modified>2023-04-18T15:01:23.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\WaterIcon.png">
       <PackagePath>WaterIcon.png</PackagePath>
-      <Modified>2023-04-17T00:12:39.116</Modified>
+      <Modified>2023-04-18T15:01:24.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\moon.jpg">
       <PackagePath>Assets\moon.jpg</PackagePath>
-      <Modified>2023-04-16T23:57:34.112</Modified>
+      <Modified>2023-04-17T00:12:30.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\moon1.jpg">
       <PackagePath>Assets\moon1.jpg</PackagePath>
-      <Modified>2023-04-16T23:57:34.118</Modified>
+      <Modified>2023-04-17T00:12:30.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\mando.jpg">
       <PackagePath>mando.jpg</PackagePath>
-      <Modified>2023-04-17T00:12:30.898</Modified>
+      <Modified>2023-04-18T15:01:23.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\moon.jpg">
       <PackagePath>moon.jpg</PackagePath>
-      <Modified>2023-04-17T00:12:30.909</Modified>
+      <Modified>2023-04-18T15:01:23.779</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\moon1.jpg">
       <PackagePath>moon1.jpg</PackagePath>
-      <Modified>2023-04-17T00:12:30.913</Modified>
+      <Modified>2023-04-18T15:01:23.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\space.mp3">
       <PackagePath>Assets\space.mp3</PackagePath>
-      <Modified>2023-04-16T23:48:38.135</Modified>
+      <Modified>2023-04-18T15:01:23.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\strong.mp3">
       <PackagePath>Assets\strong.mp3</PackagePath>
-      <Modified>2023-03-31T20:35:54.002</Modified>
+      <Modified>2023-04-18T15:01:23.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\space.mp3">
       <PackagePath>space.mp3</PackagePath>
-      <Modified>2023-04-17T00:12:38.262</Modified>
+      <Modified>2023-04-18T15:01:24.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\strong.mp3">
       <PackagePath>strong.mp3</PackagePath>
-      <Modified>2023-04-17T00:12:39.114</Modified>
+      <Modified>2023-04-18T15:01:24.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -165,27 +165,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-04-18T14:43:23.592</Modified>
+      <Modified>2023-04-18T16:27:13.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Controls.xbf">
       <PackagePath>Controls.xbf</PackagePath>
-      <Modified>2023-04-18T14:43:23.593</Modified>
+      <Modified>2023-04-18T16:27:13.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-04-18T14:43:23.593</Modified>
+      <Modified>2023-04-18T16:27:13.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Play.xbf">
       <PackagePath>Play.xbf</PackagePath>
-      <Modified>2023-04-18T14:43:23.593</Modified>
+      <Modified>2023-04-18T16:27:13.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2023-04-18T14:43:23.593</Modified>
+      <Modified>2023-04-18T16:27:13.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Shop.xbf">
       <PackagePath>Shop.xbf</PackagePath>
-      <Modified>2023-04-18T14:43:23.592</Modified>
+      <Modified>2023-04-18T16:27:13.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -193,11 +193,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-18T14:43:24.091</Modified>
+      <Modified>2023-04-18T16:27:14.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Core\G5DSI.exe">
       <PackagePath>G5DSI.exe</PackagePath>
-      <Modified>2023-04-18T14:43:24.610</Modified>
+      <Modified>2023-04-18T16:27:15.703</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

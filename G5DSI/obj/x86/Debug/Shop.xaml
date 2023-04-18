@@ -16,7 +16,7 @@
             
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
-                    <Image Source="People.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="./Assets/Icons/People.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
@@ -38,7 +38,7 @@
             
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
-                    <Image Source="Electricity.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="./Assets/Icons/Electricity.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
                 
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
@@ -60,7 +60,7 @@
             
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
-                    <Image Source="Water.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="./Assets/Icons/Water.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
@@ -82,7 +82,7 @@
             
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
-                    <Image Source="Mining.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="./Assets/Icons/Mining.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
@@ -104,7 +104,7 @@
             
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
-                    <Image Source="Militar.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Source="./Assets/Icons/Militar.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
