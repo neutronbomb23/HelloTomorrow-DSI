@@ -478,3 +478,4 @@ C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\Controls.
 C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\Shop.xbf
 C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637934986560000000.json
 C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637874397720000000.json
+C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637874397720000000.json

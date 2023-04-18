@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,13 +26,48 @@ namespace G5DSI
     public sealed partial class Play : Page {
         public Play() {
             this.InitializeComponent();
+
+            progressBar.ValueChanged += ProgressBar_ValueChanged;
+        }
+        private DispatcherTimer timer;
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            // Inicializar el temporizador
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, object e)
+        {
+            // Generar un valor aleatorio en el rango entre 0 y 100
+            int newValue = new Random().Next(0, 101);
+
+            // Actualizar el valor de la ProgressBar
+            progressBar.Value = newValue;
         }
 
         private void Shop_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Shop));
         }
-
+        private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            // Si el valor de la ProgressBar sube, se vuelve verde
+            if (e.NewValue > e.OldValue)
+            {
+                progressBar.Background = new SolidColorBrush(Colors.Green);
+            }
+            // Si el valor de la ProgressBar baja, se vuelve amarilla
+            else if (e.NewValue < e.OldValue)
+            {
+                progressBar.Background = new SolidColorBrush(Colors.Yellow);
+            }
+        }
 
         public static bool TryGoBack()
         {
@@ -68,5 +104,6 @@ namespace G5DSI
                 Frame.Navigate(typeof(MainPage));
             }
         }
+
     }
 }

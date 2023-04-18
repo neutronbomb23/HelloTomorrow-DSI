@@ -9,14 +9,49 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image Source="playBackground.png" Stretch="Fill" />
-        <Button Width="108" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click"/>
-        <Button x:Name="ElegirCancionButton" HorizontalAlignment="Right"
+        <Image Source="playBackground.png" Stretch="Fill" Opacity="0.3" />
+        <ProgressBar x:Name="progressBar" Minimum="0" Maximum="100" Height="20" Margin="550,16,399,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.4" ValueChanged="ProgressBar_ValueChanged" Background="White" BackgroundSizing="OuterBorderEdge"/>
+
+        <StackPanel Orientation="Horizontal" Margin="16">
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/crystals.png" Height="21" Width="36" />
+                <TextBlock x:Name="valorCristales" Text="1" FontSize="12" Margin="0,4,0,0" Width="14" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/doge.png" Height="21" Width="28" />
+                <TextBlock x:Name="valor2" Text="2" FontSize="12" Margin="0,4,0,0" Width="14" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
+                <TextBlock x:Name="valorAgua" Text="3" FontSize="12" Margin="0,4,0,0" Width="9" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/bolt.png" Height="21" Width="30">
+                </Image>
+                <TextBlock x:Name="valorElectricidad" Text="4" FontSize="12" Margin="0,4,0,0" Width="14" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="27">
+                <Image Source="/MilitarIcon.png" Height="21" />
+
+                <TextBlock x:Name="valorMilitar" Text="5" FontSize="12" Margin="0,4,0,0" Width="12" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                <SymbolIcon Symbol="Contact" />
+                <TextBlock  x:Name="valorPersonas" Text="6" FontSize="12" Margin="0,4,0,0" Width="8" />
+            </StackPanel>
+        </StackPanel>
+        <Button Width="133" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click" Content="Shop" FontSize="40"/>
+        <Button x:Name="ElegirCancionButton" HorizontalAlignment="Right" 
         VerticalAlignment="Top" Content="ATAJOS"
         Background="Transparent"
         Click="ElegirCancionButton_Click"
-        Width="353"
-        Height="70"
+        Width="267"
+        Height="81"
+        Foreground="AntiqueWhite"
         FontSize="40px"/>
     </Grid>
 </Page>

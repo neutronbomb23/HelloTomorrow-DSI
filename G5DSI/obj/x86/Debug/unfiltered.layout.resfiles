@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 Assets\background.png
+Assets\bolt.png
 Assets\controls.png
 Assets\Icons\Electricity.png
 Assets\Icons\Militar.png
@@ -10,8 +11,10 @@ Assets\moon.jpg
 Assets\moon1.jpg
 Assets\rocket.png
 Assets\space.mp3
+Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\strong.mp3
+Assets\waterDrop.png
 background.png
 App.xbf
 Controls.xbf
