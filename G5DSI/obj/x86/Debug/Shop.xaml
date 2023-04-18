@@ -135,8 +135,7 @@
             Width="118"
             Height="92"
             FontSize="40px"
-                                    
-            />
+                                    />
     </Grid>
 </Page>
 

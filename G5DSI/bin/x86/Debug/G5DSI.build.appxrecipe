@@ -49,6 +49,9 @@
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Electricity.png">
       <PackagePath>Assets\Icons\Electricity.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Github.png">
+      <PackagePath>Assets\Icons\Github.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Icons\Help.png">
       <PackagePath>Assets\Icons\Help.png</PackagePath>
     </AppxPackagedFile>

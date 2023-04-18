@@ -135,7 +135,6 @@
             Width="118"
             Height="92"
             FontSize="40px"
-            Click="BackButton_Click"
-            />
+            Click="BackButton_Click"/>
     </Grid>
 </Page>

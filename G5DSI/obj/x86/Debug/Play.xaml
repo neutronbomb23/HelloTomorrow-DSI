@@ -51,7 +51,7 @@
         VerticalAlignment="Top"
         Background="Transparent"
                                          
-        Width="267"
+        Width="81"
         Height="81"
         Foreground="AntiqueWhite"
         FontSize="40px"

@@ -147,6 +147,7 @@
     <Content Include="Assets\crystals.png" />
     <Content Include="Assets\doge.png" />
     <Content Include="Assets\Icons\Electricity.png" />
+    <Content Include="Assets\Icons\Github.png" />
     <Content Include="Assets\Icons\Help.png" />
     <Content Include="Assets\Icons\Militar.png" />
     <Content Include="Assets\Icons\Mining.png" />
