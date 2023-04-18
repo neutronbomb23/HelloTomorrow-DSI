@@ -48,26 +48,9 @@
         <StackPanel VerticalAlignment="Center" Height="410"  >
 
 
-            <Button x:Name= "PlayButton" Content="Play" Foreground="Black" FontSize="30" Click="Play_Click" HorizontalAlignment="Center" BorderBrush="Green" Background="LightGreen"  Margin="10" PointerEntered="PlayButton_PointerEntered" PointerExited="PlayButton_PointerExited">
-                <Button.Resources>
-                    <Storyboard x:Name="fadeOutButton1Animation">
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayButton"
-                                           Storyboard.TargetProperty="(UIElement.Opacity)">
-                            <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
-                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
-                        </DoubleAnimationUsingKeyFrames>
-                    </Storyboard>
-                    <Storyboard x:Name="fadeInButton1Animation">
-                        <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PlayButton"
-                                           Storyboard.TargetProperty="(UIElement.Opacity)">
-                            <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
-                        </DoubleAnimationUsingKeyFrames>
-                    </Storyboard>
-                </Button.Resources>
-            </Button>
-            <Button Content="Settings" Foreground="Black" FontSize="27" Click="Settings_Click" HorizontalAlignment="Center" BorderBrush="Yellow" Background="LightYellow" Width="167" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
-            <Button Content="Controls" Foreground="Black" FontSize="27" Click="Controls_Click" HorizontalAlignment="Center" BorderBrush="BlueViolet" Background="LightBlue" Width="137" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
+            <Button x:Name= "PlayButton" Content="Play" Foreground="Black" FontSize="30" Click="Play_Click" HorizontalAlignment="Center" BorderBrush="Green" Background="LightGreen"  Width ="180" Margin="10" PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited" />
+            <Button Content="Settings" Foreground="Black" FontSize="27" Click="Settings_Click" HorizontalAlignment="Center" BorderBrush="Yellow" Background="LightYellow" Width="160" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
+            <Button Content="Controls" Foreground="Black" FontSize="27" Click="Controls_Click" HorizontalAlignment="Center" BorderBrush="BlueViolet" Background="LightBlue" Width="140" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
             <Button Content="Exit" Click="Exit_Click" Foreground="Black" FontSize="30" HorizontalAlignment="Center" BorderBrush="Red" Background="LightSalmon" Width="79" Height="50" Margin="10"  PointerEntered="Button_PointerEntered" PointerExited="Button_PointerExited"/>
             <HyperlinkButton x:Name="Control1" Content="Microsoft home page" Margin="30" NavigateUri="http://www.microsoft.com" IsEnabled="True" HorizontalAlignment="Center" Foreground="White"/>
         </StackPanel>

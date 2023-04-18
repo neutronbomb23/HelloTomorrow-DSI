@@ -149,13 +149,10 @@
     <Content Include="Assets\space.mp3" />
     <Content Include="Assets\strong.mp3" />
     <Content Include="Assets\controls.png" />
-    <Content Include="Assets\mando.jpg" />
     <Content Include="background.png" />
     <Content Include="controls.png" />
     <Content Include="Electricity.png" />
-    <Content Include="ElectricityIcon.jpg" />
     <Content Include="ElectricityIcon.png" />
-    <Content Include="LockScreenLogo.scale-200.png" />
     <Content Include="mando.jpg" />
     <Content Include="Militar.png" />
     <Content Include="MilitarIcon.png" />
@@ -167,24 +164,12 @@
     <Content Include="People.png" />
     <Content Include="PeopleIcon.png" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.scale-200.png" />
-    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="Assets\StoreLogo.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="rocket.png" />
     <Content Include="space.mp3" />
-    <Content Include="SplashScreen.scale-200.png" />
-    <Content Include="Square150x150Logo.scale-200.png" />
-    <Content Include="Square44x44Logo.scale-200.png" />
-    <Content Include="Square44x44Logo.targetsize-24_altform-unplated.png" />
-    <Content Include="StoreLogo.png" />
     <Content Include="strong.mp3" />
     <Content Include="Water.png" />
     <Content Include="WaterIcon.png" />
-    <Content Include="Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

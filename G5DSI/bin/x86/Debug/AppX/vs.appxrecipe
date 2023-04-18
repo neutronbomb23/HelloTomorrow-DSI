@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-449PJDG</Machine>
-    <WindowsUser>Dorjee</WindowsUser>
+    <Machine>DESKTOP-OM6DVJJ</Machine>
+    <WindowsUser>pmq12</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ca66c3c2-6ee5-4e49-a48b-842aad95511c</PackageIdentityName>
     <PackageIdentityPublisher>CN=usuario_local</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6DE2631CD050ECF17BD9694DF88B7AF5771EE33ABFA3977810FF7A07E7798800</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>AD9476F0B80F6BAEBB003C27C0C6CBDF5E781077DF53B1D7A622015C604F8A6B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ca66c3c2-6ee5-4e49-a48b-842aad95511c_1.0.0.0_x86__zkx2yv7n2a8b8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ca66c3c2-6ee5-4e49-a48b-842aad95511c_zkx2yv7n2a8b8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>ca66c3c2-6ee5-4e49-a48b-842aad95511c</RegisteredPackageID>
@@ -27,222 +27,177 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:46:53.486</Modified>
+      <Modified>2023-04-18T14:43:24.614</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\G5DSI.exe">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\G5DSI.exe">
       <PackagePath>entrypoint\G5DSI.exe</PackagePath>
-      <Modified>2023-04-17T19:46:52.878</Modified>
+      <Modified>2023-04-18T14:43:23.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2022-06-10T20:24:12.000</Modified>
+      <Modified>2022-06-10T21:24:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2022-10-19T12:28:50.000</Modified>
+      <Modified>2022-05-06T13:16:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\background.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\background.png">
       <PackagePath>Assets\background.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.645</Modified>
+      <Modified>2023-04-16T23:57:34.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\rocket.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\rocket.png">
       <PackagePath>Assets\rocket.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.722</Modified>
+      <Modified>2023-04-16T23:57:34.124</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\controls.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\controls.png">
       <PackagePath>Assets\controls.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.647</Modified>
+      <Modified>2023-04-16T23:57:34.081</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\background.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\background.png">
       <PackagePath>background.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.982</Modified>
+      <Modified>2023-04-17T00:12:30.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\controls.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\controls.png">
       <PackagePath>controls.png</PackagePath>
-      <Modified>2023-04-17T19:34:33.651</Modified>
+      <Modified>2023-04-17T00:12:30.890</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\ElectricityIcon.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Electricity.png">
+      <PackagePath>Electricity.png</PackagePath>
+      <Modified>2023-04-18T14:20:14.748</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\ElectricityIcon.png">
       <PackagePath>ElectricityIcon.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.970</Modified>
+      <Modified>2023-04-17T00:12:30.893</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\LockScreenLogo.scale-200.png">
-      <PackagePath>LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.971</Modified>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Militar.png">
+      <PackagePath>Militar.png</PackagePath>
+      <Modified>2023-04-18T14:20:14.750</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\MilitarIcon.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MilitarIcon.png">
       <PackagePath>MilitarIcon.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.972</Modified>
+      <Modified>2023-04-17T00:12:30.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\MineralIcon.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MineralIcon.png">
       <PackagePath>MineralIcon.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.973</Modified>
+      <Modified>2023-04-17T00:12:30.903</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\MiningIcon.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Mining.png">
+      <PackagePath>Mining.png</PackagePath>
+      <Modified>2023-04-18T14:20:14.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\MiningIcon.png">
       <PackagePath>MiningIcon.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.973</Modified>
+      <Modified>2023-04-17T00:12:30.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\PeopleIcon.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\People.png">
+      <PackagePath>People.png</PackagePath>
+      <Modified>2023-04-18T14:20:14.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\PeopleIcon.png">
       <PackagePath>PeopleIcon.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.974</Modified>
+      <Modified>2023-04-17T00:12:30.915</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.638</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:34:32.640</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:34:32.640</Modified>
+      <Modified>2023-04-16T23:57:34.150</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:34:32.641</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:34:32.642</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:34:32.642</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-17T19:34:32.642</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\rocket.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\rocket.png">
       <PackagePath>rocket.png</PackagePath>
-      <Modified>2023-04-17T19:34:33.782</Modified>
+      <Modified>2023-04-17T00:12:30.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\SplashScreen.scale-200.png">
-      <PackagePath>SplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.978</Modified>
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Water.png">
+      <PackagePath>Water.png</PackagePath>
+      <Modified>2023-04-18T14:20:14.754</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Square150x150Logo.scale-200.png">
-      <PackagePath>Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.978</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Square44x44Logo.scale-200.png">
-      <PackagePath>Square44x44Logo.scale-200.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.979</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.979</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\StoreLogo.png">
-      <PackagePath>StoreLogo.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.979</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\WaterIcon.png">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\WaterIcon.png">
       <PackagePath>WaterIcon.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.979</Modified>
+      <Modified>2023-04-17T00:12:39.116</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Wide310x150Logo.scale-200.png">
-      <PackagePath>Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2023-04-17T19:34:32.980</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\moon.jpg">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\moon.jpg">
       <PackagePath>Assets\moon.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:32.650</Modified>
+      <Modified>2023-04-16T23:57:34.112</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\moon1.jpg">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\moon1.jpg">
       <PackagePath>Assets\moon1.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:32.721</Modified>
+      <Modified>2023-04-16T23:57:34.118</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\mando.jpg">
-      <PackagePath>Assets\mando.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:32.647</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\ElectricityIcon.jpg">
-      <PackagePath>ElectricityIcon.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:32.969</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\mando.jpg">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\mando.jpg">
       <PackagePath>mando.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:33.651</Modified>
+      <Modified>2023-04-17T00:12:30.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\moon.jpg">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\moon.jpg">
       <PackagePath>moon.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:33.655</Modified>
+      <Modified>2023-04-17T00:12:30.909</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\moon1.jpg">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\moon1.jpg">
       <PackagePath>moon1.jpg</PackagePath>
-      <Modified>2023-04-17T19:34:33.662</Modified>
+      <Modified>2023-04-17T00:12:30.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\space.mp3">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\space.mp3">
       <PackagePath>Assets\space.mp3</PackagePath>
-      <Modified>2023-04-17T19:34:32.919</Modified>
+      <Modified>2023-04-16T23:48:38.135</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Assets\strong.mp3">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Assets\strong.mp3">
       <PackagePath>Assets\strong.mp3</PackagePath>
-      <Modified>2023-04-17T19:34:32.968</Modified>
+      <Modified>2023-03-31T20:35:54.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\space.mp3">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\space.mp3">
       <PackagePath>space.mp3</PackagePath>
-      <Modified>2023-04-17T19:34:33.966</Modified>
+      <Modified>2023-04-17T00:12:38.262</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\strong.mp3">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\strong.mp3">
       <PackagePath>strong.mp3</PackagePath>
-      <Modified>2023-04-17T19:34:34.012</Modified>
+      <Modified>2023-04-17T00:12:39.114</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2023-04-17T19:34:32.976</Modified>
+      <Modified>2023-03-31T20:35:54.014</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\G5DSI.xr.xml">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\G5DSI.xr.xml">
       <PackagePath>G5DSI.xr.xml</PackagePath>
-      <Modified>2023-04-17T19:46:52.789</Modified>
+      <Modified>2023-04-18T14:43:23.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-04-17T19:46:52.799</Modified>
+      <Modified>2023-04-18T14:43:23.592</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Controls.xbf">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Controls.xbf">
       <PackagePath>Controls.xbf</PackagePath>
-      <Modified>2023-04-17T19:46:52.799</Modified>
+      <Modified>2023-04-18T14:43:23.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-04-17T19:46:52.799</Modified>
+      <Modified>2023-04-18T14:43:23.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Play.xbf">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Play.xbf">
       <PackagePath>Play.xbf</PackagePath>
-      <Modified>2023-04-17T19:46:52.799</Modified>
+      <Modified>2023-04-18T14:43:23.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Settings.xbf">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Settings.xbf">
       <PackagePath>Settings.xbf</PackagePath>
-      <Modified>2023-04-17T19:46:52.799</Modified>
+      <Modified>2023-04-18T14:43:23.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Shop.xbf">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Shop.xbf">
       <PackagePath>Shop.xbf</PackagePath>
-      <Modified>2023-04-17T19:46:52.798</Modified>
+      <Modified>2023-04-18T14:43:23.592</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2022-10-19T16:05:02.000</Modified>
+      <Modified>2022-05-06T16:02:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-17T19:37:48.531</Modified>
+      <Modified>2023-04-18T14:43:24.091</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Core\G5DSI.exe">
+    <AppxPackagedFile Include="C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\bin\x86\Debug\Core\G5DSI.exe">
       <PackagePath>G5DSI.exe</PackagePath>
-      <Modified>2023-04-17T19:46:53.484</Modified>
+      <Modified>2023-04-18T14:43:24.610</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
