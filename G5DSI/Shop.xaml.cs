@@ -17,9 +17,23 @@ namespace G5DSI
 {
     public sealed partial class Shop : Page
     {
+        Play play;
         public Shop()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+            
+        }
+
+
+        private Play playPage;
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (e.Parameter != null && e.Parameter is Play)
+            {
+                playPage = e.Parameter as Play;
+            }
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -36,6 +50,11 @@ namespace G5DSI
                 return true;
             }
             return false;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            playPage.number1 = 13;
         }
     }
 }

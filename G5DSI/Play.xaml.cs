@@ -24,9 +24,19 @@ namespace G5DSI
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
     public sealed partial class Play : Page {
+
+        int i = 0;
+
+
         public Play() {
             this.InitializeComponent();
-
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+            // Obtener el texto actual del TextBlock
+            string text = valorCristales.Text;
+            // Convertir el texto a un número
+            int number1 = int.Parse(text);
+            // Actualizar el texto del TextBlock con el nuevo número
+            valorCristales.Text = number1.ToString();
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
         private DispatcherTimer timer;
@@ -34,13 +44,16 @@ namespace G5DSI
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
+            valorCristales.Text = number1.ToString();
             // Inicializar el temporizador
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
             timer.Start();
         }
+
+        public int number1 { get; set; }
+
 
         private void Timer_Tick(object sender, object e)
         {
@@ -53,7 +66,19 @@ namespace G5DSI
 
         private void Shop_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Shop));
+            // Obtener el texto actual del TextBlock
+            string text = valorAgua.Text;
+
+            // Convertir el texto a un número
+            int number = int.Parse(text);
+
+            // Sumar 1 al número
+            number++;
+
+            // Actualizar el texto del TextBlock con el nuevo número
+            valorAgua.Text = number.ToString();
+            Play playPage = this; // Obtener la instancia de la página Play
+            Frame.Navigate(typeof(Shop), playPage); // Navegar a la página Shop y pasar la instancia de la página Play como parámetro
         }
         private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {

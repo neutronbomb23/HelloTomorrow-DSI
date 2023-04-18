@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Background="LightSteelBlue">
+        <Button Click="Button_Click" />
         <Pivot>
             <Pivot.Title>
                 <TextBlock Text="SHOP" FontSize="30" Foreground="Black" HorizontalAlignment="Center"/>

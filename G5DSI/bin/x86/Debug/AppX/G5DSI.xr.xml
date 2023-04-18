@@ -95,6 +95,7 @@
       <RootProperty Name="Resources" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />
