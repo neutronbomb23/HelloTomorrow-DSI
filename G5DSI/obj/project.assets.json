@@ -10255,18 +10255,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dorjee\\.nuget\\packages\\": {},
+    "C:\\Users\\pmq12\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
+      "projectUniqueName": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
       "projectName": "G5DSI",
-      "projectPath": "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
-      "packagesPath": "C:\\Users\\Dorjee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\obj\\",
+      "projectPath": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
+      "packagesPath": "C:\\Users\\pmq12\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pmq12\\OneDrive\\Escritorio\\HelloTomorrow-DSI\\G5DSI\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10274,7 +10274,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dorjee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pmq12\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

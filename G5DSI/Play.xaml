@@ -44,14 +44,19 @@
                 <TextBlock  x:Name="valorPersonas" Text="6" FontSize="12" Margin="0,4,0,0" Width="8" />
             </StackPanel>
         </StackPanel>
-        <Button Width="133" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click" Content="Shop" FontSize="40"/>
-        <Button x:Name="ElegirCancionButton" HorizontalAlignment="Right" 
-        VerticalAlignment="Top" Content="ATAJOS"
+        <Button Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click" Padding="0">
+            <Image Source="/Assets/Icons/Shop.png" Stretch="Fill"/>
+        </Button>
+        <Button HorizontalAlignment="Right" 
+        VerticalAlignment="Top"
         Background="Transparent"
         Click="ElegirCancionButton_Click"
-        Width="267"
+        Width="81"
         Height="81"
         Foreground="AntiqueWhite"
-        FontSize="40px"/>
+        FontSize="40px"
+        Padding="0">
+            <Image Source="/Assets/Icons/Options.png" Stretch="Fill"/>
+        </Button>
     </Grid>
 </Page>

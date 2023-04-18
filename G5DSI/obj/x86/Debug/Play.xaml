@@ -9,15 +9,55 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image Source="playBackground.png" Stretch="Fill" />
-        <Button x:ConnectionId='2' Width="108" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom"                   />
-        <Button x:ConnectionId='3' x:Name="ElegirCancionButton" HorizontalAlignment="Right"
-        VerticalAlignment="Top" Content="ATAJOS"
+        <Image Source="playBackground.png" Stretch="Fill" Opacity="0.3" />
+        <ProgressBar x:ConnectionId='2' x:Name="progressBar" Minimum="0" Maximum="100" Height="20" Margin="550,16,399,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.4"                                         Background="White" BackgroundSizing="OuterBorderEdge"/>
+
+        <StackPanel Orientation="Horizontal" Margin="16">
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/crystals.png" Height="21" Width="36" />
+                <TextBlock x:ConnectionId='10' x:Name="valorCristales" Text="1" FontSize="12" Margin="0,4,0,0" Width="14" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/doge.png" Height="21" Width="28" />
+                <TextBlock x:ConnectionId='9' x:Name="valor2" Text="2" FontSize="12" Margin="0,4,0,0" Width="14" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
+                <TextBlock x:ConnectionId='8' x:Name="valorAgua" Text="3" FontSize="12" Margin="0,4,0,0" Width="9" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/bolt.png" Height="21" Width="30">
+                </Image>
+                <TextBlock x:ConnectionId='7' x:Name="valorElectricidad" Text="4" FontSize="12" Margin="0,4,0,0" Width="14" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="27">
+                <Image Source="/MilitarIcon.png" Height="21" />
+
+                <TextBlock x:ConnectionId='6' x:Name="valorMilitar" Text="5" FontSize="12" Margin="0,4,0,0" Width="12" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                <SymbolIcon Symbol="Contact" />
+                <TextBlock x:ConnectionId='5'  x:Name="valorPersonas" Text="6" FontSize="12" Margin="0,4,0,0" Width="8" />
+            </StackPanel>
+        </StackPanel>
+        <Button x:ConnectionId='3' Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom"                    Padding="0">
+            <Image Source="/Assets/Icons/Shop.png" Stretch="Fill"/>
+        </Button>
+        <Button x:ConnectionId='4' HorizontalAlignment="Right" 
+        VerticalAlignment="Top"
         Background="Transparent"
                                          
-        Width="353"
-        Height="70"
-        FontSize="40px"/>
+        Width="267"
+        Height="81"
+        Foreground="AntiqueWhite"
+        FontSize="40px"
+        Padding="0">
+            <Image Source="/Assets/Icons/Options.png" Stretch="Fill"/>
+        </Button>
     </Grid>
 </Page>
 

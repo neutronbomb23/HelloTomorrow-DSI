@@ -147,9 +147,12 @@
     <Content Include="Assets\crystals.png" />
     <Content Include="Assets\doge.png" />
     <Content Include="Assets\Icons\Electricity.png" />
+    <Content Include="Assets\Icons\Help.png" />
     <Content Include="Assets\Icons\Militar.png" />
     <Content Include="Assets\Icons\Mining.png" />
+    <Content Include="Assets\Icons\Options.png" />
     <Content Include="Assets\Icons\People.png" />
+    <Content Include="Assets\Icons\Shop.png" />
     <Content Include="Assets\Icons\Water.png" />
     <Content Include="Assets\moon.jpg" />
     <Content Include="Assets\moon1.jpg" />
