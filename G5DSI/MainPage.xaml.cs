@@ -46,7 +46,10 @@ namespace G5DSI {
             Frame.Navigate(typeof(Play));
         }
 
-
+        private void myButton_Click(object sender, RoutedEventArgs e)
+        {
+            fadeOutAnimation.Begin();
+        }
 
         private void myTextBlock_PointerEntered(object sender, PointerRoutedEventArgs e){
             fadeInAnimation.Stop(); // Detener la animación fadeInAnimation si aún está en progreso
@@ -58,8 +61,6 @@ namespace G5DSI {
             fadeOutAnimation.Stop(); // Detener la animación fadeOutAnimation si aún está en progreso
             fadeInAnimation.Begin(); // Comenzar la animación fadeInAnimation
         }
-
-
 
         private void Button_PointerEntered(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
         {
