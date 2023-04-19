@@ -7,10 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Storyboard x:Name="progressBarAnimation">
+            <DoubleAnimation 
+        Storyboard.TargetName="progressBar"
+        Storyboard.TargetProperty="Value"
+        Duration="0:0:1" />
+        </Storyboard>
 
+
+    </Page.Resources>
     <Grid>
         <Image Source="playBackground.png" Stretch="Fill" Opacity="0.3" />
-        <ProgressBar x:Name="progressBar" Minimum="0" Maximum="100" Height="20" Margin="550,16,399,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.4" ValueChanged="ProgressBar_ValueChanged" Background="White" BackgroundSizing="OuterBorderEdge"/>
+        <ProgressBar x:Name="progressBar"  Minimum="0" Maximum="100" Height="20" Margin="550,16,399,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.4" ValueChanged="ProgressBar_ValueChanged" Background="White" BackgroundSizing="OuterBorderEdge"/>
 
         <StackPanel Orientation="Horizontal" Margin="16">
 

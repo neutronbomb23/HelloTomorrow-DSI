@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
@@ -29,54 +30,67 @@ namespace G5DSI
         public int number1 = 100;
         public int number2 = 100;
         public int number3 = 100;
-
+        private int metaValor = 100; // establecer la meta en 100%
+        private int valorActual = 0; // establecer el valor actual en 0%
+        private DispatcherTimer timer;
         public Play() {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
 
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
-        private DispatcherTimer timer;
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
-            valorElectricidad.Text = number1.ToString(); 
+            valorElectricidad.Text = number1.ToString();
             valorAgua.Text = number2.ToString();
             valorCristales.Text = number3.ToString();
 
+            progressBar.Value = valorActual;
             timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Interval = TimeSpan.FromMilliseconds(10);
             timer.Tick += Timer_Tick;
-            timer.Start();
+            timer.Start(); ;
         }
 
-        
+
         private void Timer_Tick(object sender, object e)
         {
-            // Generar un valor aleatorio en el rango entre 0 y 100
-            int newValue = new Random().Next(0, 101);
+            // calcular la cantidad de incremento en función de la duración de transición y la meta
+            int incremento = (int)((metaValor - valorActual) * 0.01 * 10);
 
-            // Actualizar el valor de la ProgressBar
-            progressBar.Value = newValue;
+            // si el incremento es cero, establecer el valor en la meta y restablecer el valor actual y la meta
+            if (incremento == 0)
+            {
+                progressBar.Value = metaValor;
+                valorActual = 0;
+
+                // generar una nueva meta aleatoria diferente de la meta actual
+                int nuevaMeta = new Random().Next(0, 101);
+                while (nuevaMeta == metaValor)
+                {
+                    nuevaMeta = new Random().Next(0, 101);
+                }
+                metaValor = nuevaMeta;
+            }
+            // de lo contrario, actualizar el valor de la ProgressBar y el valor actual
+            else
+            {
+                progressBar.Value += incremento;
+                valorActual += incremento;
+            }
+
+            // Actualizar el color de fondo de la ProgressBar
+            if (valorActual > metaValor)
+            {
+                progressBar.Background = new SolidColorBrush(Colors.Yellow);
+            }
+            else
+            {
+                progressBar.Background = new SolidColorBrush(Colors.Green);
+            }
         }
 
-        private void Shop_Click(object sender, RoutedEventArgs e)
-        {
-            // Obtener el texto actual del TextBlock
-            string text = valorAgua.Text;
-
-            // Convertir el texto a un número
-            int number = int.Parse(text);
-
-            // Sumar 1 al número
-            number++;
-
-            // Actualizar el texto del TextBlock con el nuevo número
-            valorAgua.Text = number.ToString();
-            Play playPage = this; // Obtener la instancia de la página Play
-            Frame.Navigate(typeof(Shop), playPage); // Navegar a la página Shop y pasar la instancia de la página Play como parámetro
-        }
         private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
             // Si el valor de la ProgressBar sube, se vuelve verde
@@ -90,6 +104,13 @@ namespace G5DSI
                 progressBar.Background = new SolidColorBrush(Colors.Yellow);
             }
         }
+
+        private void Shop_Click(object sender, RoutedEventArgs e)
+        {
+            Play playPage = this; // Obtener la instancia de la página Play
+            Frame.Navigate(typeof(Shop), playPage); // Navegar a la página Shop y pasar la instancia de la página Play como parámetro
+        }
+
 
         public static bool TryGoBack()
         {

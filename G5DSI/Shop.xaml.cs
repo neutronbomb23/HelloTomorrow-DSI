@@ -57,24 +57,63 @@ namespace G5DSI
         {
    
             playPage.number1 -= 1;
-            playPage.number2 -= 1;
-            playPage.number3 -= 1;
+    
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
 
             playPage.number1 -= 2;
-            playPage.number2 -= 2;
-            playPage.number3 -= 2;
+
         }
 
         private void Button_Click5(object sender, RoutedEventArgs e)
         {
 
             playPage.number1 -= 5;
+
+        }
+
+        private void Button_ClickAgua1(object sender, RoutedEventArgs e)
+        {
+
+            playPage.number2 -= 1;
+
+        }
+
+        private void Button_ClickAgua2(object sender, RoutedEventArgs e)
+        {
+
+            playPage.number2 -= 2;
+
+        }
+
+        private void Button_ClickAgua5(object sender, RoutedEventArgs e)
+        {
+
             playPage.number2 -= 5;
+
+        }
+
+        private void Button_ClickCristales1(object sender, RoutedEventArgs e)
+        {
+
+            playPage.number3 -= 1;
+
+        }
+
+        private void Button_ClickCristales2(object sender, RoutedEventArgs e)
+        {
+
+            playPage.number3 -= 2;
+
+        }
+
+        private void Button_ClickCristales5(object sender, RoutedEventArgs e)
+        {
+
             playPage.number3 -= 5;
+
         }
     }
 }

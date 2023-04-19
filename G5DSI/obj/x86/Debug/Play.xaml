@@ -7,47 +7,56 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Storyboard x:ConnectionId='2' x:Name="progressBarAnimation">
+            <DoubleAnimation 
+        Storyboard.TargetName="progressBar"
+        Storyboard.TargetProperty="Value"
+        Duration="0:0:1" />
+        </Storyboard>
 
+
+    </Page.Resources>
     <Grid>
         <Image Source="playBackground.png" Stretch="Fill" Opacity="0.3" />
-        <ProgressBar x:ConnectionId='2' x:Name="progressBar" Minimum="0" Maximum="100" Height="20" Margin="550,16,399,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.4"                                         Background="White" BackgroundSizing="OuterBorderEdge"/>
+        <ProgressBar x:ConnectionId='3' x:Name="progressBar"  Minimum="0" Maximum="100" Height="20" Margin="550,16,399,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,3.4"                                         Background="White" BackgroundSizing="OuterBorderEdge"/>
 
         <StackPanel Orientation="Horizontal" Margin="16">
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/crystals.png" Height="21" Width="27" />
-                <TextBlock x:ConnectionId='10' x:Name="valorCristales" Text="100" FontSize="20" Margin="0,4,0,0" Width="30" Height="40" />
+                <TextBlock x:ConnectionId='11' x:Name="valorCristales" Text="100" FontSize="20" Margin="0,4,0,0" Width="30" Height="40" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/doge.png" Height="21" Width="28" />
-                <TextBlock x:ConnectionId='9' x:Name="valor2" Text="100" FontSize="20" Margin="0,4,0,0" Width="32" />
+                <TextBlock x:ConnectionId='10' x:Name="valor2" Text="100" FontSize="20" Margin="0,4,0,0" Width="32" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="978" Width="43">
                 <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
-                <TextBlock x:ConnectionId='8' x:Name="valorAgua" Text="100" FontSize="20" Margin="0,4,0,0" Width="31" Height="36" />
+                <TextBlock x:ConnectionId='9' x:Name="valorAgua" Text="100" FontSize="20" Margin="0,4,0,0" Width="31" Height="36" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/bolt.png" Height="21" Width="30">
                 </Image>
-                <TextBlock x:ConnectionId='7' x:Name="valorElectricidad" Text="100" FontSize="20" Margin="0,4,0,0" Width="28" />
+                <TextBlock x:ConnectionId='8' x:Name="valorElectricidad" Text="100" FontSize="20" Margin="0,4,0,0" Width="28" />
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="44">
                 <Image Source="/MilitarIcon.png" Height="21" />
 
-                <TextBlock x:ConnectionId='6' x:Name="valorMilitar" Text="100" FontSize="20" Margin="0,4,0,0" Width="36" />
+                <TextBlock x:ConnectionId='7' x:Name="valorMilitar" Text="100" FontSize="20" Margin="0,4,0,0" Width="36" />
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="0,0,0,0" Width="37">
                 <SymbolIcon Symbol="Contact" />
-                <TextBlock x:ConnectionId='5'  x:Name="valorPersonas" Text="100" FontSize="20" Margin="0,4,0,0" Width="29" />
+                <TextBlock x:ConnectionId='6'  x:Name="valorPersonas" Text="100" FontSize="20" Margin="0,4,0,0" Width="29" />
             </StackPanel>
         </StackPanel>
-        <Button x:ConnectionId='3' Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom"                    Padding="0">
+        <Button x:ConnectionId='4' Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom"                    Padding="0">
             <Image Source="/Assets/Icons/Shop.png" Stretch="Fill"/>
         </Button>
-        <Button x:ConnectionId='4' HorizontalAlignment="Right" 
+        <Button x:ConnectionId='5' HorizontalAlignment="Right" 
         VerticalAlignment="Top"
         Background="Transparent"
                                          

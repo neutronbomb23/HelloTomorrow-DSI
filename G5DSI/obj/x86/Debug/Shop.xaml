@@ -43,15 +43,15 @@
                 </PivotItem.Header>
                 
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
-                    <StackPanel x:ConnectionId='3' Orientation="Vertical" Margin="10" CanDrag="True"                                >
+                    <StackPanel x:ConnectionId='9' Orientation="Vertical" Margin="10" CanDrag="True"                                >
                         <TextBlock Text="Generador Electrico" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel x:ConnectionId='4' Orientation="Vertical" Margin="10" CanDrag="True"                               >
+                    <StackPanel x:ConnectionId='10' Orientation="Vertical" Margin="10" CanDrag="True"                               >
                         <TextBlock Text="Generador++" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel x:ConnectionId='5' Orientation="Vertical" Margin="10" CanDrag="True"                               >
+                    <StackPanel x:ConnectionId='11' Orientation="Vertical" Margin="10" CanDrag="True"                               >
                         <TextBlock Text="Repetidor" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png"  />
                     </StackPanel>
@@ -64,16 +64,16 @@
                     <Image Source="./Assets/Icons/Water.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                <StackPanel x:ConnectionId='6' Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue"                                   >
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                    <StackPanel x:ConnectionId='7' Orientation="Vertical" Margin="10" CanDrag="True"                                   >
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                    <StackPanel x:ConnectionId='8' Orientation="Vertical" Margin="10" CanDrag="True"                                   >
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
@@ -86,17 +86,17 @@
                     <Image Source="./Assets/Icons/Mining.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                <StackPanel x:ConnectionId='3' Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue"                                        >
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                    <StackPanel x:ConnectionId='4' Orientation="Vertical" Margin="10" CanDrag="True"                                        >
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <TextBlock x:ConnectionId='5' Text="XXXX" FontSize="32" HorizontalAlignment="Center"                                        />
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                 </StackPanel>

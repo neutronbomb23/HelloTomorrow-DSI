@@ -64,16 +64,16 @@
                     <Image Source="./Assets/Icons/Water.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue" PointerPressed="Button_ClickAgua1">
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True" PointerPressed="Button_ClickAgua2">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True" PointerPressed="Button_ClickAgua5">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
@@ -86,17 +86,17 @@
                     <Image Source="./Assets/Icons/Mining.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue" PointerPressed="Button_ClickCristales1">
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
-                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
+                    <StackPanel Orientation="Vertical" Margin="10" CanDrag="True" PointerPressed="Button_ClickCristales2">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True">
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center" PointerPressed="Button_ClickCristales5"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                     </StackPanel>
                 </StackPanel>
