@@ -29,64 +29,65 @@ namespace G5DSI
     /// </summary>
     public sealed partial class Settings : Page
     {
-        MediaPlayer mediaPlayer = new MediaPlayer();
-        MainPage mainPage;
+        
         private BitmapImage customCursorImage;
-
+        private MainPage mainPage;
+        private MediaPlayer mediaPlayer;
+        private MediaElement mediaElement1 = new MediaElement();
+        private MediaElement mediaElement = new MediaElement();
+        private MediaPlayer mediaPlayer1;
+        public double opacity = 1;
+        double mecagoentodo;
+        public bool cambiado { get; set; }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            customCursorImage = new BitmapImage(new Uri("ms-appx:///Assets/rocket.png"));
+            if (e.Parameter is MediaPlayer)
+            {
+                mediaPlayer = e.Parameter as MediaPlayer;
+            }
+
+            if (e.Parameter is MainPage)
+            {
+                mainPage = e.Parameter as MainPage;
+            }
         }
+
 
 
         public Settings()
         {
             this.InitializeComponent();
-            //mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/space.mp3"));
-            //mediaPlayer.Play();
-            //mediaPlayer.Volume = 0.5;
-            //Cargo canción
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+
         }
 
         private void slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            mediaPlayer.Volume = e.NewValue / 100.0;
+            mecagoentodo = e.NewValue / 100.0;
 
-
+            if (mediaPlayer != null)
+            {
+                mediaPlayer.Volume = e.NewValue / 100.0;
+            }
+            if (cambiado) { mecagoentodo = e.NewValue / 100.0; mediaElement1.Volume = mecagoentodo;/* mediaElement.Volume = mediaPlayer1.Volume;*/ }
+            
         }
 
 
         private void brillo_Changed_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            MG.Opacity = e.NewValue / 100.0;
-            if (MG.Opacity < 0.2)
+            opacity = e.NewValue / 100.0;
+            if (Opacity < 0.2)
             {
-                MG.Opacity = 0.2;
+                Opacity = 0.2;
             }
-            //mainPage.Opacity = MG.Opacity;
+            MG.Opacity= opacity;    
+
         }
 
         private async void ElegirCancionButton_Click(object sender, RoutedEventArgs e)
         {
-            #region cancion personalizada
-            //// Crear un objeto FileOpenPicker
-            //FileOpenPicker picker = new FileOpenPicker();
-            //picker.ViewMode = PickerViewMode.Thumbnail;
-            //picker.SuggestedStartLocation = PickerLocationId.MusicLibrary;
-            //picker.FileTypeFilter.Add(".mp3");
-
-            //// Mostrar el diálogo de selección de archivo
-            //StorageFile file = await picker.PickSingleFileAsync();
-
-            //if (file != null)
-            //{
-            //    // Reproducir la canción seleccionada
-            //    MediaElement mediaElement = new MediaElement();
-            //    mediaElement.SetSource(await file.OpenAsync(FileAccessMode.Read), file.ContentType);
-            //    mediaElement.Play();
-            //}
-            #endregion
+           
 
             #region cancion assets
             // Declarar la variable file al inicio del método
@@ -112,13 +113,16 @@ namespace G5DSI
             var result = await dialog.ShowAsync();
             if (result == ContentDialogResult.Primary)
             {
+                cambiado = true;
                 // Obtener el archivo de la canción seleccionada
                 var selectedFile = canciones[(dialog.Content as ListBox).SelectedIndex];
 
                 // Reproducir la canción seleccionada
-                var mediaElement = new MediaElement();
-                mediaElement.SetSource(await selectedFile.OpenAsync(FileAccessMode.Read), selectedFile.ContentType);
-                mediaElement.Play();
+                mediaPlayer.Pause();
+                mediaElement.Pause();
+                mediaElement1.SetSource(await selectedFile.OpenAsync(FileAccessMode.Read), selectedFile.ContentType);
+                mediaElement1.Volume = mecagoentodo;
+                mediaElement1.Play();
             }
 
             #endregion
@@ -127,8 +131,11 @@ namespace G5DSI
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Settings.TryGoBack();
-            mediaPlayer.Pause();
+
+            Settings settings = this; // Obtener la instancia de la página Play
+
+            Frame.Navigate(typeof(MainPage), settings);
+
         }
 
         public static bool TryGoBack()
@@ -140,6 +147,33 @@ namespace G5DSI
                 return true;
             }
             return false;
+        }
+
+        private async void ElegirCancionPersonalizada_Click(object sender, RoutedEventArgs e)
+        {
+            #region cancion personalizada
+            // Crear un objeto FileOpenPicker
+            FileOpenPicker picker = new FileOpenPicker();
+            picker.ViewMode = PickerViewMode.Thumbnail;
+            picker.SuggestedStartLocation = PickerLocationId.MusicLibrary;
+            picker.FileTypeFilter.Add(".mp3");
+
+            // Mostrar el diálogo de selección de archivo
+            StorageFile file = await picker.PickSingleFileAsync();
+
+            if (file != null)
+            {
+                cambiado = true;
+                mediaPlayer.Pause();
+                mediaElement1.Pause();
+                // Reproducir la canción seleccionada
+                
+                mediaElement.SetSource(await file.OpenAsync(FileAccessMode.Read), file.ContentType); 
+                
+                mediaElement.Play();
+               
+            }
+            #endregion
         }
     }
 }

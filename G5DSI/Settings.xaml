@@ -35,13 +35,21 @@
             FontSize="40px"
             Click="BackButton_Click"
             />
-        <Button x:Name="ElegirCancionButton" HorizontalAlignment="Center"
-        Content="Elegir canción"
+        <Button x:Name="ElegirCancionButton"
+        Content="Elegir canción del juego"
         Background="Transparent"
         Click="ElegirCancionButton_Click"
-        Width="353"
+        Width="301"
         Height="70"
-        FontSize="40px"/>
+        FontSize="25px" Margin="449,0,0,0"/>
+
+        <Button x:Name="ElegirCancionPersonalizada"
+        Content="Importa tu canción"
+        Background="Transparent"
+        Click="ElegirCancionPersonalizada_Click"
+        Width="301"
+        Height="70"
+        FontSize="25px" Margin="850,0,0,0"/>
 
     </Grid>
 </Page>

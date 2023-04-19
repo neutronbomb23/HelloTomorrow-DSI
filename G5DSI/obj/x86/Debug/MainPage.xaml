@@ -8,7 +8,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     BorderBrush="White"
-   
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
@@ -25,17 +24,17 @@
 
         <Image x:ConnectionId='3' x:Name="imi" Source="/Assets/moon.jpg"  Stretch="Fill"  Margin="0,0,10,0"/>
         <StackPanel IsTapEnabled="False">
-            <TextBlock x:ConnectionId='9' x:Name="myTextBlock" Text="HELLO TOMORROW" Foreground="Wheat"  FontSize="70"                                                                                           
+            <TextBlock x:ConnectionId='8' x:Name="myTextBlock" Text="HELLO TOMORROW" Foreground="Wheat"  FontSize="70"                                                                                           
                                                      HorizontalAlignment="Center" IsTapEnabled="False">
                 <TextBlock.Resources>
-                    <Storyboard x:ConnectionId='10' x:Name="fadeOutAnimation">
+                    <Storyboard x:ConnectionId='9' x:Name="fadeOutAnimation">
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="myTextBlock"
                                            Storyboard.TargetProperty="(UIElement.Opacity)">
                             <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
                             <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
                         </DoubleAnimationUsingKeyFrames>
                     </Storyboard>
-                    <Storyboard x:ConnectionId='11' x:Name="fadeInAnimation">
+                    <Storyboard x:ConnectionId='10' x:Name="fadeInAnimation">
                         <DoubleAnimationUsingKeyFrames Storyboard.TargetName="myTextBlock"
                                            Storyboard.TargetProperty="(UIElement.Opacity)">
                             <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
@@ -52,7 +51,7 @@
             <Button x:ConnectionId='6' Content="Controls" Foreground="Black" FontSize="27"                        HorizontalAlignment="Center" BorderBrush="BlueViolet" Background="LightBlue" Width="140" Height="50" Margin="10"                                                                             />
             <Button x:ConnectionId='7' Content="Exit"                    Foreground="Black" FontSize="30" HorizontalAlignment="Center" BorderBrush="Red" Background="LightSalmon" Width="79" Height="50" Margin="10"                                                                             />
             <HyperlinkButton Margin="30" Width="120" Height="120" NavigateUri="https://github.com/neutronbomb23/HelloTomorrow-DSI" IsEnabled="True" HorizontalAlignment="Center" Foreground="White" Padding="0">
-                <Image x:ConnectionId='8' Source="/Assets/Icons/Github.png" Stretch="Fill"                                                                            />
+                <Image Source="/Assets/Icons/Github.png" Stretch="Fill"/>
             </HyperlinkButton>
         </StackPanel>
     </Grid>

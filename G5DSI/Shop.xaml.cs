@@ -17,6 +17,7 @@ namespace G5DSI
 {
     public sealed partial class Shop : Page
     {
+        bool cambiado1 = false;
         Play play;
         public Shop()
         {
@@ -38,7 +39,7 @@ namespace G5DSI
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Settings.TryGoBack();
+            Frame.Navigate(typeof(Play), playPage);
         }
 
         public static bool TryGoBack()
@@ -54,7 +55,26 @@ namespace G5DSI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            playPage.number1 = 13;
+   
+            playPage.number1 -= 1;
+            playPage.number2 -= 1;
+            playPage.number3 -= 1;
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+
+            playPage.number1 -= 2;
+            playPage.number2 -= 2;
+            playPage.number3 -= 2;
+        }
+
+        private void Button_Click5(object sender, RoutedEventArgs e)
+        {
+
+            playPage.number1 -= 5;
+            playPage.number2 -= 5;
+            playPage.number3 -= 5;
         }
     }
 }

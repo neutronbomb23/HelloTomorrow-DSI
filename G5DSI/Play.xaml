@@ -16,32 +16,32 @@
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/crystals.png" Height="21" Width="27" />
-                <TextBlock x:Name="valorCristales" Text="1" FontSize="20" Margin="0,4,0,0" Width="20" Height="40" />
+                <TextBlock x:Name="valorCristales" Text="100" FontSize="20" Margin="0,4,0,0" Width="30" Height="40" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/doge.png" Height="21" Width="28" />
-                <TextBlock x:Name="valor2" Text="2" FontSize="20" Margin="0,4,0,0" Width="14" />
+                <TextBlock x:Name="valor2" Text="100" FontSize="20" Margin="0,4,0,0" Width="32" />
             </StackPanel>
 
-            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="978" Width="55">
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="978" Width="43">
                 <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
-                <TextBlock x:Name="valorAgua" Text="3" FontSize="20" Margin="0,4,0,0" Width="21" Height="36" />
+                <TextBlock x:Name="valorAgua" Text="100" FontSize="20" Margin="0,4,0,0" Width="31" Height="36" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/bolt.png" Height="21" Width="30">
                 </Image>
-                <TextBlock x:Name="valorElectricidad" Text="4" FontSize="20" Margin="0,4,0,0" Width="14" />
+                <TextBlock x:Name="valorElectricidad" Text="100" FontSize="20" Margin="0,4,0,0" Width="28" />
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="27">
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="44">
                 <Image Source="/MilitarIcon.png" Height="21" />
 
-                <TextBlock x:Name="valorMilitar" Text="5" FontSize="20" Margin="0,4,0,0" Width="12" />
+                <TextBlock x:Name="valorMilitar" Text="100" FontSize="20" Margin="0,4,0,0" Width="36" />
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="0,0,0,0" Width="37">
                 <SymbolIcon Symbol="Contact" />
-                <TextBlock  x:Name="valorPersonas" Text="6" FontSize="20" Margin="0,4,0,0" Width="20" />
+                <TextBlock  x:Name="valorPersonas" Text="100" FontSize="20" Margin="0,4,0,0" Width="29" />
             </StackPanel>
         </StackPanel>
         <Button Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom" Click="Shop_Click" Padding="0">

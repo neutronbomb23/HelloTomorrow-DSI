@@ -15,56 +15,35 @@
         <StackPanel Orientation="Horizontal" Margin="16">
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
-                <Image Source="/Assets/crystals.png" Height="21" Width="36" />
-<<<<<<< Updated upstream
-                <TextBlock x:ConnectionId='10' x:Name="valorCristales" Text="1" FontSize="12" Margin="0,4,0,0" Width="14" />
-=======
-<<<<<<< HEAD
-                <TextBlock x:ConnectionId='10' x:Name="valorCristales" Text="1" FontSize="100" Margin="0,4,0,0" Width="185" Height="160" />
-=======
-                <TextBlock x:ConnectionId='10' x:Name="valorCristales" Text="1" FontSize="12" Margin="0,4,0,0" Width="14" />
->>>>>>> 4019c15aa204e747340c05b14214b7af298cb77a
->>>>>>> Stashed changes
+                <Image Source="/Assets/crystals.png" Height="21" Width="27" />
+                <TextBlock x:ConnectionId='10' x:Name="valorCristales" Text="100" FontSize="20" Margin="0,4,0,0" Width="30" Height="40" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/doge.png" Height="21" Width="28" />
-                <TextBlock x:ConnectionId='9' x:Name="valor2" Text="2" FontSize="12" Margin="0,4,0,0" Width="14" />
+                <TextBlock x:ConnectionId='9' x:Name="valor2" Text="100" FontSize="20" Margin="0,4,0,0" Width="32" />
             </StackPanel>
 
-<<<<<<< Updated upstream
-            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="978" Width="43">
                 <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
-                <TextBlock x:ConnectionId='8' x:Name="valorAgua" Text="3" FontSize="12" Margin="0,4,0,0" Width="9" />
-=======
-<<<<<<< HEAD
-            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="978" Width="125">
-                <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
-                <TextBlock x:ConnectionId='8' x:Name="valorAgua" Text="3" FontSize="50" Margin="0,4,0,0" Width="247" Height="220" />
-=======
-            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
-                <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
-                <TextBlock x:ConnectionId='8' x:Name="valorAgua" Text="3" FontSize="12" Margin="0,4,0,0" Width="9" />
->>>>>>> 4019c15aa204e747340c05b14214b7af298cb77a
->>>>>>> Stashed changes
+                <TextBlock x:ConnectionId='8' x:Name="valorAgua" Text="100" FontSize="20" Margin="0,4,0,0" Width="31" Height="36" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/bolt.png" Height="21" Width="30">
                 </Image>
-                <TextBlock x:ConnectionId='7' x:Name="valorElectricidad" Text="4" FontSize="12" Margin="0,4,0,0" Width="14" />
+                <TextBlock x:ConnectionId='7' x:Name="valorElectricidad" Text="100" FontSize="20" Margin="0,4,0,0" Width="28" />
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="27">
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="44">
                 <Image Source="/MilitarIcon.png" Height="21" />
 
-                <TextBlock x:ConnectionId='6' x:Name="valorMilitar" Text="5" FontSize="12" Margin="0,4,0,0" Width="12" />
+                <TextBlock x:ConnectionId='6' x:Name="valorMilitar" Text="100" FontSize="20" Margin="0,4,0,0" Width="36" />
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0" Width="37">
                 <SymbolIcon Symbol="Contact" />
-                <TextBlock x:ConnectionId='5'  x:Name="valorPersonas" Text="6" FontSize="12" Margin="0,4,0,0" Width="8" />
+                <TextBlock x:ConnectionId='5'  x:Name="valorPersonas" Text="100" FontSize="20" Margin="0,4,0,0" Width="29" />
             </StackPanel>
         </StackPanel>
-<<<<<<< Updated upstream
         <Button x:ConnectionId='3' Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom"                    Padding="0">
             <Image Source="/Assets/Icons/Shop.png" Stretch="Fill"/>
         </Button>
@@ -72,26 +51,6 @@
         VerticalAlignment="Top"
         Background="Transparent"
                                          
-=======
-<<<<<<< HEAD
-        <Button x:ConnectionId='3' Width="133" Height="108" Background="LightGreen" Margin="0,0,0,10" VerticalAlignment="Bottom"                    Content="Shop" FontSize="40"/>
-        <Button x:ConnectionId='4' x:Name="ElegirCancionButton" HorizontalAlignment="Right" 
-        VerticalAlignment="Top" Content="ATAJOS"
-        Background="Transparent"
-                                         
-        Width="267"
-        Height="81"
-        Foreground="AntiqueWhite"
-        FontSize="40px"/>
-=======
-        <Button x:ConnectionId='3' Width="100" Height="100" Margin="0,0,0,10" VerticalAlignment="Bottom"                    Padding="0">
-            <Image Source="/Assets/Icons/Shop.png" Stretch="Fill"/>
-        </Button>
-        <Button x:ConnectionId='4' HorizontalAlignment="Right" 
-        VerticalAlignment="Top"
-        Background="Transparent"
-                                         
->>>>>>> Stashed changes
         Width="81"
         Height="81"
         Foreground="AntiqueWhite"
@@ -99,10 +58,6 @@
         Padding="0">
             <Image Source="/Assets/Icons/Options.png" Stretch="Fill"/>
         </Button>
-<<<<<<< Updated upstream
-=======
->>>>>>> 4019c15aa204e747340c05b14214b7af298cb77a
->>>>>>> Stashed changes
     </Grid>
 </Page>
 

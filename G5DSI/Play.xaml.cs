@@ -26,35 +26,32 @@ namespace G5DSI
     public sealed partial class Play : Page {
 
         int i = 0;
-
+        public int number1 = 100;
+        public int number2 = 100;
+        public int number3 = 100;
 
         public Play() {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            // Obtener el texto actual del TextBlock
-            string text = valorCristales.Text;
-            // Convertir el texto a un número
-            int number1 = int.Parse(text);
-            // Actualizar el texto del TextBlock con el nuevo número
-            valorCristales.Text = number1.ToString();
+
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
         private DispatcherTimer timer;
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            base.OnNavigatedTo(e);
-            valorCristales.Text = number1.ToString();
-            // Inicializar el temporizador
+
+            valorElectricidad.Text = number1.ToString(); 
+            valorAgua.Text = number2.ToString();
+            valorCristales.Text = number3.ToString();
+
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
             timer.Start();
         }
 
-        public int number1 { get; set; }
-
-
+        
         private void Timer_Tick(object sender, object e)
         {
             // Generar un valor aleatorio en el rango entre 0 y 100

@@ -15,10 +15,10 @@
 
         <StackPanel>
             <TextBlock Text="Volume" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='6' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
+            <Slider x:ConnectionId='7' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='7' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
-            <ListView x:ConnectionId='8' x:Name="ListViewSongs" Visibility="Collapsed"/>
+            <Slider x:ConnectionId='8' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
+            <ListView x:ConnectionId='9' x:Name="ListViewSongs" Visibility="Collapsed"/>
 
         </StackPanel>
 
@@ -35,13 +35,21 @@
             FontSize="40px"
                                     
             />
-        <Button x:ConnectionId='5' x:Name="ElegirCancionButton" HorizontalAlignment="Center"
-        Content="Elegir canción"
+        <Button x:ConnectionId='5' x:Name="ElegirCancionButton"
+        Content="Elegir canción del juego"
         Background="Transparent"
                                          
-        Width="353"
+        Width="301"
         Height="70"
-        FontSize="40px"/>
+        FontSize="25px" Margin="449,0,0,0"/>
+
+        <Button x:ConnectionId='6' x:Name="ElegirCancionPersonalizada"
+        Content="Importa tu canción"
+        Background="Transparent"
+                                                
+        Width="301"
+        Height="70"
+        FontSize="25px" Margin="850,0,0,0"/>
 
     </Grid>
 </Page>

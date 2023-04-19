@@ -17,24 +17,59 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
-// La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
 namespace G5DSI {
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     public sealed partial class MainPage : Page {
 
         MediaPlayer mediaPlayer = new MediaPlayer();
+        private Settings settings = new Settings();
+        MainPage mainPage;
+
+        public double VOLUMENGENERAL { get; set; }
+        
         public MainPage() {
             this.InitializeComponent();
-            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/space.mp3"));
+            this.NavigationCacheMode = NavigationCacheMode.Required;
+            VOLUMENGENERAL = 0.4;
+            mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/LaVieEnRose.mp3"));
             mediaPlayer.Play();
-            mediaPlayer.Volume = 0.5;
+
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e) {
-            Frame.Navigate(typeof(Settings));
-            mediaPlayer.Pause();
+     
+
+            // Navegar a la página que desea modificar el volumen y pasar el objeto MediaPlayer como parámetro
+            Frame.Navigate(typeof(Settings), mediaPlayer);
+
+           
         }
+
+
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            if (e.Parameter != null && e.Parameter is Settings)
+            {
+                settings = e.Parameter as Settings;
+            }
+
+            if (settings != null && mediaPlayer != null && settings.cambiado)
+            {
+                mediaPlayer.Pause();
+            }
+
+            if (settings != null && mainPage != null)
+            {
+                mainPage.Opacity = Opacity;
+            }
+        }
+
+
+
 
         private void Controls_Click(object sender, RoutedEventArgs e)
         {
