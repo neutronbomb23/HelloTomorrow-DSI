@@ -33,6 +33,7 @@ namespace G5DSI {
             this.NavigationCacheMode = NavigationCacheMode.Required;
             VOLUMENGENERAL = 0.4;
             mediaPlayer.Source = MediaSource.CreateFromUri(new Uri("ms-appx:///Assets/LaVieEnRose.mp3"));
+            mediaPlayer.Volume = 0.0;
             mediaPlayer.Play();
 
         }

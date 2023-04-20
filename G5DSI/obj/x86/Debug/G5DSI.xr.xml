@@ -72,6 +72,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Tag" />
       <RootProperty Name="CanDrag" />
       <RootEvent Name="PointerPressed" />
     </RootType>
@@ -93,10 +94,10 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsTapEnabled" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="CanDrag" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />
-      <RootEvent Name="PointerPressed" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
       <RootProperty Name="Children" />
@@ -145,6 +146,13 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Title" />
       <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="AllowDrop" />
+      <RootEvent Name="Drop" />
+      <RootEvent Name="DragOver" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Background" />

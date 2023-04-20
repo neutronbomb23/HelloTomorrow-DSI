@@ -1,1 +1,1 @@
-C:\Users\pmq12\OneDrive\Escritorio\HelloTomorrow-DSI\G5DSI\G5DSI.csproj;x86
+C:\Users\Dorjee\Documents\GitHub\HelloTomorrow-DSI\G5DSI\G5DSI.csproj;x86
