@@ -28,16 +28,18 @@ namespace G5DSI
     public sealed partial class Play : Page {
 
         int i = 0;
-        public int number1 = 100;
-        public int number2 = 100;
-        public int number3 = 100;
+        public int number1 = 50;
+        public int number2 = 50;
+        public int number3 = 50;
         private int metaValor = 100; // establecer la meta en 100%
         private int valorActual = 0; // establecer el valor actual en 0%
+        bool popupShow = true;
         private DispatcherTimer timer;
         public Play() {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            ShowPopup();
+            //ShowPopup();
+
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -46,7 +48,18 @@ namespace G5DSI
             valorElectricidad.Text = number1.ToString();
             valorAgua.Text = number2.ToString();
             valorCristales.Text = number3.ToString();
-
+            if (number1 == 0)
+            {
+                ShowPopupElectricity();
+            }
+            if (number2 == 0)
+            {
+                ShowPopupWater();
+            }
+            if (number3 == 0)
+            {
+                ShowPopupMinerals();
+            }
             progressBar.Value = valorActual;
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromMilliseconds(10);
@@ -55,7 +68,7 @@ namespace G5DSI
         }
 
 
-        private void Timer_Tick(object sender, object e)
+        private  void Timer_Tick(object sender, object e)
         {
             // calcular la cantidad de incremento en función de la duración de transición y la meta
             int incremento = (int)((metaValor - valorActual) * 0.01 * 10);
@@ -63,17 +76,19 @@ namespace G5DSI
             // si el incremento es cero, establecer el valor en la meta y restablecer el valor actual y la meta
             if (incremento == 0)
             {
-               
-                //progressBar.Value = metaValor;
-                //valorActual = 0;
+                //crecen las personas
 
-                //// generar una nueva meta aleatoria diferente de la meta actual
-                //int nuevaMeta = new Random().Next(0, 101);
-                //while (nuevaMeta == metaValor)
-                //{
-                //    nuevaMeta = new Random().Next(0, 101);
-                //}
-                //metaValor = nuevaMeta;
+                progressBar.Value = metaValor;
+                valorActual = 0;
+
+                popupShow = false;
+                // generar una nueva meta aleatoria diferente de la meta actual
+                int nuevaMeta = new Random().Next(0, 101);
+                while (nuevaMeta == metaValor)
+                {
+                    nuevaMeta = new Random().Next(0, 101);
+                }
+                metaValor = nuevaMeta;
             }
             // de lo contrario, actualizar el valor de la ProgressBar y el valor actual
             else
@@ -96,30 +111,40 @@ namespace G5DSI
         }
 
 
-        private async void ShowPopup()
+        private async void ShowPopupElectricity()
         {
-            Button closeButton = new Button()
-            {
-                Content = "Cerrar",
-                Width = 80,
-                Height = 32
-            };
-
-            closeButton.Click += CloseButton_Click;
 
             ContentDialog popup = new ContentDialog()
             {
-                Title = "Aviso",
-                Content = "Este es un aviso en forma de popup",
+                Title = "Aviso Urgente",
+                Content = "Te quedaste sin suministro de electricidad, POV: de un niño camerunés.\n¡Has perdido!",
                 PrimaryButtonText = "closeButton"
             };
-
-            await popup.ShowAsync();
+            var result = await popup.ShowAsync();
         }
 
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        private async void ShowPopupWater()
         {
-            // Código para cerrar el popup
+
+            ContentDialog popup = new ContentDialog()
+            {
+                Title = "Aviso Urgente",
+                Content = "Te quedaste sin agua, tus colonos han muerto de ser, como los africanos. \n ¡Has perdido!",
+                PrimaryButtonText = "closeButton"
+            };
+            var result = await popup.ShowAsync();
+        }
+
+        private async void ShowPopupMinerals()
+        {
+
+            ContentDialog popup = new ContentDialog()
+            {
+                Title = "Aviso Urgente",
+                Content = "Te quedaste sin minerales, no has podido fabricar suficientes armas y los Gurond te han invadido. \n ¡Has perdido!",
+                PrimaryButtonText = "closeButton"
+            };
+            var result = await popup.ShowAsync();
         }
 
         private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
