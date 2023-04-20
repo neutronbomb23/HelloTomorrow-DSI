@@ -39,7 +39,7 @@ namespace G5DSI
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Play), playPage);
+            Frame.Navigate(typeof(Play));
         }
 
         public static bool TryGoBack()

@@ -8,6 +8,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.UI;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -36,7 +37,7 @@ namespace G5DSI
         public Play() {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
+            ShowPopup();
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -62,16 +63,17 @@ namespace G5DSI
             // si el incremento es cero, establecer el valor en la meta y restablecer el valor actual y la meta
             if (incremento == 0)
             {
-                progressBar.Value = metaValor;
-                valorActual = 0;
+               
+                //progressBar.Value = metaValor;
+                //valorActual = 0;
 
-                // generar una nueva meta aleatoria diferente de la meta actual
-                int nuevaMeta = new Random().Next(0, 101);
-                while (nuevaMeta == metaValor)
-                {
-                    nuevaMeta = new Random().Next(0, 101);
-                }
-                metaValor = nuevaMeta;
+                //// generar una nueva meta aleatoria diferente de la meta actual
+                //int nuevaMeta = new Random().Next(0, 101);
+                //while (nuevaMeta == metaValor)
+                //{
+                //    nuevaMeta = new Random().Next(0, 101);
+                //}
+                //metaValor = nuevaMeta;
             }
             // de lo contrario, actualizar el valor de la ProgressBar y el valor actual
             else
@@ -89,6 +91,35 @@ namespace G5DSI
             {
                 progressBar.Background = new SolidColorBrush(Colors.Green);
             }
+
+            
+        }
+
+
+        private async void ShowPopup()
+        {
+            Button closeButton = new Button()
+            {
+                Content = "Cerrar",
+                Width = 80,
+                Height = 32
+            };
+
+            closeButton.Click += CloseButton_Click;
+
+            ContentDialog popup = new ContentDialog()
+            {
+                Title = "Aviso",
+                Content = "Este es un aviso en forma de popup",
+                PrimaryButtonText = "closeButton"
+            };
+
+            await popup.ShowAsync();
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Código para cerrar el popup
         }
 
         private void ProgressBar_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
