@@ -68,9 +68,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Background" />
       <RootProperty Name="CanDrag" />
@@ -94,9 +93,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsTapEnabled" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="PointerEntered" />
       <RootEvent Name="PointerExited" />

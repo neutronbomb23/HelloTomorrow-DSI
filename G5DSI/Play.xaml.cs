@@ -18,45 +18,38 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
-// La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
-
-namespace G5DSI
-{
-    /// <summary>
-    /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
-    /// </summary>
+namespace G5DSI {
     public sealed partial class Play : Page {
-
-        int i = 0;
-        public int coins = 150;
+        public int coins = 1500;
         public int electricity = 50;
-        public int number2 = 50;
-        public int number3 = 50;
+        public int water = 50;
+        public int minerals = 50;
+        public int militar = 50;
+        public int people = 200;
+
         private int metaValor = 100; // establecer la meta en 100%
         private int valorActual = 0; // establecer el valor actual en 0%
-        bool popupShow = true;
         private DispatcherTimer timer;
+
         public Play() {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             valorCoins.Text = coins.ToString();
             valorElectricidad.Text = electricity.ToString();
-            valorAgua.Text = number2.ToString();
-            valorCristales.Text = number3.ToString();
-            if (electricity == 0)
-            {
+            valorAgua.Text = water.ToString();
+            valorCristales.Text = minerals.ToString();
+            if (electricity == 0) {
                 ShowPopupElectricity();
             }
-            if (number2 == 0)
-            {
+            if (water == 0){
                 ShowPopupWater();
             }
-            if (number3 == 0)
-            {
+            if (militar == 0){
                 ShowPopupMinerals();
             }
             progressBar.Value = valorActual;
@@ -73,13 +66,10 @@ namespace G5DSI
             int incremento = (int)((metaValor - valorActual) * 0.01 * 10);
 
             // si el incremento es cero, establecer el valor en la meta y restablecer el valor actual y la meta
-            if (incremento == 0)
-            {
-                //crecen las personas
+            if (incremento == 0) { //crecen las personas
                 progressBar.Value = metaValor;
                 valorActual = 0;
 
-                popupShow = false;
                 // generar una nueva meta aleatoria diferente de la meta actual
                 int nuevaMeta = new Random().Next(0, 101);
                 while (nuevaMeta == metaValor)
@@ -105,8 +95,6 @@ namespace G5DSI
                 progressBar.Background = new SolidColorBrush(Colors.Green);
             }
         }
-
-
         private async void ShowPopupElectricity()
         {
             ContentDialog popup = new ContentDialog()
@@ -120,7 +108,6 @@ namespace G5DSI
 
         private async void ShowPopupWater()
         {
-
             ContentDialog popup = new ContentDialog()
             {
                 Title = "Aviso Urgente",
@@ -132,7 +119,6 @@ namespace G5DSI
 
         private async void ShowPopupMinerals()
         {
-
             ContentDialog popup = new ContentDialog()
             {
                 Title = "Aviso Urgente",

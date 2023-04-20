@@ -36,7 +36,9 @@ namespace G5DSI
                 playPage = e.Parameter as Play;
                 valorCoins.Text = playPage.coins.ToString();
                 valorElectricidad.Text = playPage.electricity.ToString();
-
+                valorAgua.Text = playPage.water.ToString();
+                valorCristales.Text = playPage.minerals.ToString();
+                valorMilitar.Text = playPage.militar.ToString();
             }
         }
 
@@ -71,8 +73,40 @@ namespace G5DSI
             BuyElectricity(40, 5);
         }
 
-        private void BuyElectricity(int coins, int e) {
-            if (playPage.coins - coins >= 0){
+        private void Button_ClickAgua1(object sender, RoutedEventArgs e)
+        {
+            BuyWater(10, 10);
+        }
+
+        private void Button_ClickAgua2(object sender, RoutedEventArgs e)
+        {
+            BuyWater(17, 100);
+        }
+
+        private void Button_ClickAgua5(object sender, RoutedEventArgs e)
+        {
+            BuyWater(50, 300);
+        }
+
+        private void Button_ClickCristales1(object sender, RoutedEventArgs e)
+        {
+            BuyMinerals(100, 10);
+        }
+
+        private void Button_ClickCristales2(object sender, RoutedEventArgs e)
+        {
+            BuyMinerals(150, 20);
+        }
+
+        private void Button_ClickCristales5(object sender, RoutedEventArgs e)
+        {
+            BuyMinerals(200, 30);
+        }
+
+        private void BuyElectricity(int coins, int e)
+        {
+            if (playPage.coins - coins >= 0)
+            {
                 playPage.coins -= coins;
                 valorCoins.Text = playPage.coins.ToString();
 
@@ -80,47 +114,49 @@ namespace G5DSI
                 valorElectricidad.Text = playPage.electricity.ToString();
             }
         }
-
-        private void Button_ClickAgua1(object sender, RoutedEventArgs e)
+        private void BuyWater(int coins, int e)
         {
+            if (playPage.coins - coins >= 0)
+            {
+                playPage.coins -= coins;
+                valorCoins.Text = playPage.coins.ToString();
 
-            playPage.number2 -= 1;
-
+                playPage.water += e;
+                valorAgua.Text = playPage.water.ToString();
+            }
         }
-
-        private void Button_ClickAgua2(object sender, RoutedEventArgs e)
+        private void BuyMinerals(int coins, int e)
         {
+            if (playPage.coins - coins >= 0)
+            {
+                playPage.coins -= coins;
+                valorCoins.Text = playPage.coins.ToString();
 
-            playPage.number2 -= 2;
-
+                playPage.minerals += e;
+                valorCristales.Text = playPage.minerals.ToString();
+            }
         }
-
-        private void Button_ClickAgua5(object sender, RoutedEventArgs e)
+        private void BuyPeople(int coins, int e)
         {
+            if (playPage.coins - coins >= 0)
+            {
+                playPage.coins -= coins;
+                valorCoins.Text = playPage.coins.ToString();
 
-            playPage.number2 -= 5;
-
+                playPage.people += e;
+                valorPersonas.Text = playPage.people.ToString();
+            }
         }
-
-        private void Button_ClickCristales1(object sender, RoutedEventArgs e)
+        private void BuyMilitar(int coins, int e)
         {
+            if (playPage.coins - coins >= 0)
+            {
+                playPage.coins -= coins;
+                valorCoins.Text = playPage.coins.ToString();
 
-            playPage.number3 -= 1;
-
-        }
-
-        private void Button_ClickCristales2(object sender, RoutedEventArgs e)
-        {
-
-            playPage.number3 -= 2;
-
-        }
-
-        private void Button_ClickCristales5(object sender, RoutedEventArgs e)
-        {
-
-            playPage.number3 -= 5;
-
+                playPage.militar += e;
+                valorMilitar.Text = playPage.militar.ToString();
+            }
         }
     }
 }
