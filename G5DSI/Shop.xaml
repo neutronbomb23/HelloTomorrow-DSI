@@ -24,14 +24,17 @@
                     <StackPanel x:Name="draggableItem1" Tag="peo1" Orientation="Vertical" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
+                        <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel  x:Name="draggableItem2" Tag="peo2" Orientation="Vertical" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel  x:Name="draggableItem3" Tag="peo3" Orientation="Vertical" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
@@ -46,14 +49,17 @@
                     <StackPanel  x:Name="draggableItem4" Orientation="Vertical" Margin="10" Tag="elec1" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="Generador Electrico" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="elec2" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="Generador++" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="elec3" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="Repetidor" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png"  />
+                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
@@ -68,14 +74,17 @@
                     <StackPanel Orientation="Vertical" Tag="wat1" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="wat2" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="wat3" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
@@ -90,14 +99,17 @@
                     <StackPanel Orientation="Vertical" Tag="min1" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="min2" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="min3" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
@@ -112,14 +124,17 @@
                     <StackPanel Orientation="Vertical" Tag="arm1" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="arm2" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Orientation="Vertical" Tag="arm3" Margin="10" CanDrag="True" PointerPressed="OnDraggableItemPointerPressed">
                         <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                        <TextBlock Text="Precio: 2, Cantidad: 4" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
@@ -151,7 +166,7 @@
                 <Image Source="/MilitarIcon.png" Height="21" />
                 <TextBlock x:Name="valorMilitar" Text="100" FontSize="20"/>
             </StackPanel>
-            
+
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <SymbolIcon Symbol="Contact" />
                 <TextBlock  x:Name="valorPersonas" Text="100" FontSize="20"/>
@@ -159,12 +174,14 @@
         </StackPanel>
 
 
-        <Canvas x:Name="redCanvas" Background="Red" Margin="0,714,10,150" AllowDrop="True" Drop="redCanvas_Drop" DragOver="redCanvas_DragOver"/>
-<Button
-          x:Name="BackButton"
-          Style="{StaticResource NavigationBackButtonNormalStyle}"
-          IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
-           ToolTipService.ToolTip="Back"          
+        <Canvas x:Name="redCanvas" Background="Red" Margin="0,714,10,150" AllowDrop="True" Drop="redCanvas_Drop" DragOver="redCanvas_DragOver">
+            <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS"/>
+        </Canvas>
+        <Button
+            x:Name="BackButton"
+            Style="{StaticResource NavigationBackButtonNormalStyle}"
+            IsEnabled="{x:Bind Frame.CanGoBack, Mode=OneWay}" 
+            ToolTipService.ToolTip="Back"          
             VerticalAlignment="Bottom"
             Background="LightBlue"
             Foreground="White"

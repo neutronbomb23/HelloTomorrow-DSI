@@ -151,6 +151,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
       <RootProperty Name="AllowDrop" />
+      <RootProperty Name="Children" />
       <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
     </RootType>
