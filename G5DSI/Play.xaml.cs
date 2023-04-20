@@ -28,7 +28,8 @@ namespace G5DSI
     public sealed partial class Play : Page {
 
         int i = 0;
-        public int number1 = 50;
+        public int coins = 150;
+        public int electricity = 50;
         public int number2 = 50;
         public int number3 = 50;
         private int metaValor = 100; // establecer la meta en 100%
@@ -38,17 +39,15 @@ namespace G5DSI
         public Play() {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            //ShowPopup();
-
             progressBar.ValueChanged += ProgressBar_ValueChanged;
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
-            valorElectricidad.Text = number1.ToString();
+            valorCoins.Text = coins.ToString();
+            valorElectricidad.Text = electricity.ToString();
             valorAgua.Text = number2.ToString();
             valorCristales.Text = number3.ToString();
-            if (number1 == 0)
+            if (electricity == 0)
             {
                 ShowPopupElectricity();
             }
@@ -77,7 +76,6 @@ namespace G5DSI
             if (incremento == 0)
             {
                 //crecen las personas
-
                 progressBar.Value = metaValor;
                 valorActual = 0;
 
@@ -106,14 +104,11 @@ namespace G5DSI
             {
                 progressBar.Background = new SolidColorBrush(Colors.Green);
             }
-
-            
         }
 
 
         private async void ShowPopupElectricity()
         {
-
             ContentDialog popup = new ContentDialog()
             {
                 Title = "Aviso Urgente",
@@ -198,11 +193,9 @@ namespace G5DSI
             {
                 Frame.Navigate(typeof(Controls));
             }
-            else
-            {
+            else {
                 Frame.Navigate(typeof(MainPage));
             }
         }
-
     }
 }

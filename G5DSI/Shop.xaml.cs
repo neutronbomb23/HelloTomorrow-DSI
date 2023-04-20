@@ -34,6 +34,9 @@ namespace G5DSI
             if (e.Parameter != null && e.Parameter is Play)
             {
                 playPage = e.Parameter as Play;
+                valorCoins.Text = playPage.coins.ToString();
+                valorElectricidad.Text = playPage.electricity.ToString();
+
             }
         }
 
@@ -55,23 +58,27 @@ namespace G5DSI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-   
-            playPage.number1 -= 1;
-    
+            BuyElectricity(10, 1);
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-
-            playPage.number1 -= 2;
-
+            BuyElectricity(15, 3);
         }
 
         private void Button_Click5(object sender, RoutedEventArgs e)
         {
+            BuyElectricity(40, 5);
+        }
 
-            playPage.number1 -= 5;
+        private void BuyElectricity(int coins, int e) {
+            if (playPage.coins - coins >= 0){
+                playPage.coins -= coins;
+                valorCoins.Text = playPage.coins.ToString();
 
+                playPage.electricity += e;
+                valorElectricidad.Text = playPage.electricity.ToString();
+            }
         }
 
         private void Button_ClickAgua1(object sender, RoutedEventArgs e)

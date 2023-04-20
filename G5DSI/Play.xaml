@@ -14,8 +14,6 @@
         Storyboard.TargetProperty="Value"
         Duration="0:0:1" />
         </Storyboard>
-
-
     </Page.Resources>
     <Grid>
         <Image Source="playBackground.png" Stretch="Fill" Opacity="0.3" />
@@ -30,7 +28,7 @@
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/doge.png" Height="21" Width="28" />
-                <TextBlock x:Name="valor2" Text="100" FontSize="20" Margin="0,4,0,0" Width="32" />
+                <TextBlock x:Name="valorCoins" Text="100" FontSize="20" Margin="0,4,0,0" Width="32" />
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="978" Width="43">
@@ -39,8 +37,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
-                <Image Source="/Assets/bolt.png" Height="21" Width="30">
-                </Image>
+                <Image Source="/Assets/bolt.png" Height="21" Width="30"/>
                 <TextBlock x:Name="valorElectricidad" Text="100" FontSize="20" Margin="0,4,0,0" Width="28" />
             </StackPanel>
             <StackPanel Orientation="Vertical" Margin="0,0,16,0" Height="969" Width="44">

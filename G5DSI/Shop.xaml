@@ -14,7 +14,7 @@
             <Pivot.Title>
                 <TextBlock Text="SHOP" FontSize="30" Foreground="Black" HorizontalAlignment="Center"/>
             </Pivot.Title>
-            
+
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/People.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -36,12 +36,12 @@
                 </StackPanel>
             </PivotItem>
 
-            
+
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Electricity.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
-                
+
                 <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
                     <StackPanel Orientation="Vertical" Margin="10" CanDrag="True"   PointerPressed="Button_Click">
                         <TextBlock Text="Generador Electrico" FontSize="32" HorizontalAlignment="Center"/>
@@ -58,7 +58,7 @@
                 </StackPanel>
             </PivotItem>
 
-            
+
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Water.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -79,8 +79,8 @@
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
-            
-            
+
+
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Mining.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -101,8 +101,8 @@
                     </StackPanel>
                 </StackPanel>
             </PivotItem>
-            
-            
+
+
             <PivotItem Background="LightBlue">
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Militar.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -124,6 +124,38 @@
                 </StackPanel>
             </PivotItem>
         </Pivot>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,50,0">
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/crystals.png" Height="21" Width="27" />
+                <TextBlock x:Name="valorCristales" Text="100" FontSize="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/doge.png" Height="21" Width="28" />
+                <TextBlock x:Name="valorCoins" Text="100" FontSize="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
+                <TextBlock x:Name="valorAgua" Text="100" FontSize="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/Assets/bolt.png" Height="21" Width="30"/>
+                <TextBlock x:Name="valorElectricidad" Text="100" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <Image Source="/MilitarIcon.png" Height="21" />
+
+                <TextBlock x:Name="valorMilitar" Text="100" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="0,0,16,0">
+                <SymbolIcon Symbol="Contact" />
+                <TextBlock  x:Name="valorPersonas" Text="100" FontSize="20"/>
+            </StackPanel>
+        </StackPanel>
 
         <Button
           x:Name="BackButton"
