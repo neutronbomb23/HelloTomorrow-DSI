@@ -70,8 +70,6 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Tag" />
       <RootProperty Name="CanDrag" />
       <RootEvent Name="PointerPressed" />
@@ -94,6 +92,9 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="IsTapEnabled" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="CanDrag" />
       <RootEvent Name="SelectionChanged" />
       <RootEvent Name="PointerEntered" />
@@ -114,9 +115,27 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="G5DSI.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog">
+      <RootProperty Name="TitleTemplate" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
       <RootProperty Name="Duration" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="Minimum" />
       <RootProperty Name="Maximum" />
@@ -141,24 +160,38 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="IsTapEnabled" />
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="G5DSI.Settings" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Title" />
       <RootProperty Name="Items" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
       <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootProperty Name="Background" />
       <RootProperty Name="AllowDrop" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Children" />
       <RootEvent Name="Drop" />
       <RootEvent Name="DragOver" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
-      <RootProperty Name="Background" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Content" />
+      <RootMethod Name="GetTop" />
+      <RootMethod Name="SetTop" />
+      <RootMethod Name="GetLeft" />
+      <RootMethod Name="SetLeft" />
     </RootType>
     <RootType FullName="G5DSI.Shop" />
   </Roots.RootTypes>

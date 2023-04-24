@@ -8,6 +8,29 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
+        <Style TargetType="Button" x:Key="CustomDialogContentButtonStyle">
+                <Setter Property="Background" Value="#FF62707D"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="BorderBrush" Value="Transparent"/>
+            </Style>
+        <Style TargetType="ListBox" x:Key="CustomDialogListBoxStyle">
+            <Setter Property="Background" Value="#FF1E2124"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="ContentDialog" x:Key="CustomContentDialogStyle">
+            <Setter Property="Background" Value="#FF3B3F42"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TitleTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
         <Storyboard x:Name="progressBarAnimation">
             <DoubleAnimation 
         Storyboard.TargetName="progressBar"

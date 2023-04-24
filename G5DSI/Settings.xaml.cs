@@ -105,9 +105,12 @@ namespace G5DSI
             var dialog = new ContentDialog
             {
                 Title = "Seleccionar canción",
-                Content = new ListBox { ItemsSource = canciones.Select(f => f.DisplayName).ToList() },
+                Content = new ListBox { ItemsSource = canciones.Select(f => f.DisplayName).ToList(), Style = (Style)Resources["CustomDialogListBoxStyle"] },
                 PrimaryButtonText = "Reproducir",
-                SecondaryButtonText = "Cancelar"
+                SecondaryButtonText = "Cancelar",
+                Style = (Style)Resources["CustomContentDialogStyle"],
+                PrimaryButtonStyle = (Style)Resources["CustomDialogContentButtonStyle"],
+                SecondaryButtonStyle = (Style)Resources["CustomDialogContentButtonStyle"]
             };
 
             var result = await dialog.ShowAsync();

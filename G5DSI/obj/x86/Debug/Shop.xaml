@@ -10,33 +10,46 @@
 
     <Grid Background="LightSteelBlue">
 
+
+
+
         <Pivot>
             <Pivot.Title>
                 <TextBlock Text="SHOP" FontSize="30" Foreground="Black" HorizontalAlignment="Center"/>
             </Pivot.Title>
 
-            <PivotItem Background="LightBlue">
+            <PivotItem Background="LightBlue" Margin="12,20,12,0">
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/People.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
 
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue" IsTapEnabled="True">
-                    <StackPanel x:ConnectionId='23' x:Name="draggableItem1" Tag="peo1" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                <ListView Grid.Column="0" Padding="10" Background="LightBlue" IsTapEnabled="True">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <StackPanel x:ConnectionId='25' x:Name="draggableItem1" Tag="peo1" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Complejo de adosados" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
                         <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='24'  x:Name="draggableItem2" Tag="peo2" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='26' x:Name="draggableItem2" Tag="peo2" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Chabola" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='25'  x:Name="draggableItem3" Tag="peo3" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
+                    <StackPanel x:ConnectionId='27' x:Name="draggableItem3" Tag="peo3" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Piso de 15x15 metros" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                </StackPanel>
+                    <Canvas x:ConnectionId='28' x:Name="redCanvas" Background="LightYellow" AllowDrop="True"                                                     Width="400" Height="600">
+                        <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS" HorizontalAlignment="Left" Height="39" Canvas.Top="240" VerticalAlignment="Top" Canvas.Left="36"/>
+                    </Canvas>
+                </ListView>
+
+
             </PivotItem>
 
 
@@ -44,24 +57,31 @@
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Electricity.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
-
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
-                    <StackPanel x:ConnectionId='20'  x:Name="draggableItem4" Orientation="Vertical" Margin="10" Tag="elec1" CanDrag="True"                                               >
-                        <TextBlock Text="Generador Electrico" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                <ListView Grid.Column="0" Padding="10" Background="LightBlue" IsTapEnabled="True">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <StackPanel x:ConnectionId='21' x:Name="draggableItem4" Tag="elec1" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Generador" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
                         <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='21' Orientation="Vertical" Tag="elec2" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="Generador++" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='22' x:Name="draggableItem5" Tag="elec2" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Repetidor" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='22' Orientation="Vertical" Tag="elec3" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="Repetidor" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="./Assets/Square150x150Logo.scale-200.png"  />
+                    <StackPanel x:ConnectionId='23' x:Name="draggableItem6" Tag="elec3" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Capacitador" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                </StackPanel>
+                    <Canvas x:ConnectionId='24' x:Name="redCanvas1" Background="LightYellow" AllowDrop="True"                                                     Width="400" Height="600">
+                        <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS" HorizontalAlignment="Left" Height="39" Canvas.Top="240" VerticalAlignment="Top" Canvas.Left="36"/>
+                    </Canvas>
+                </ListView>
             </PivotItem>
 
 
@@ -69,24 +89,31 @@
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Water.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
-
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
-                    <StackPanel x:ConnectionId='17' Orientation="Vertical" Tag="wat1" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                <ListView Grid.Column="0" Padding="10" Background="LightBlue" IsTapEnabled="True">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <StackPanel x:ConnectionId='17' x:Name="draggableItem7" Tag="wat1" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Presa" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
                         <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='18' Orientation="Vertical" Tag="wat2" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='18' x:Name="draggableItem8" Tag="wat2" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Purificadora de agua" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='19' Orientation="Vertical" Tag="wat3" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='19' x:Name="draggableItem9" Tag="wat3" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Frabica de botellas Bezoya" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                </StackPanel>
+                    <Canvas x:ConnectionId='20' x:Name="redCanvas2" Background="LightYellow" AllowDrop="True"                                                     Width="349" Height="600">
+                        <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS" HorizontalAlignment="Left" Height="39" Canvas.Top="247" VerticalAlignment="Top" Canvas.Left="10"/>
+                    </Canvas>
+                </ListView>
             </PivotItem>
 
 
@@ -94,24 +121,31 @@
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Mining.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
-
-                <StackPanel Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
-                    <StackPanel x:ConnectionId='14' Orientation="Vertical" Tag="min1" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
+                <ListView Grid.Column="0" Padding="10" Background="LightBlue" IsTapEnabled="True">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <StackPanel x:ConnectionId='13' x:Name="draggableItem10" Tag="mini1" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Mina de roca lunar" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
                         <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='15' Orientation="Vertical" Tag="min2" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='14' x:Name="draggableItem11" Tag="mini2" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Excavadora de diamante" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='16' Orientation="Vertical" Tag="min3" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='15' x:Name="draggableItem12" Tag="mini3" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Perforador preciso" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                </StackPanel>
+                    <Canvas x:ConnectionId='16' x:Name="redCanvas3" Background="LightYellow" AllowDrop="True"                                                     Width="400" Height="600">
+                        <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS" HorizontalAlignment="Left" Height="39" Canvas.Top="240" VerticalAlignment="Top" Canvas.Left="36"/>
+                    </Canvas>
+                </ListView>
             </PivotItem>
 
 
@@ -119,24 +153,31 @@
                 <PivotItem.Header>
                     <Image Source="./Assets/Icons/Militar.png" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </PivotItem.Header>
-
-                <StackPanel x:ConnectionId='10' x:Name="militia" Grid.Column="0" Orientation="Horizontal" Padding="5" Background="LightBlue">
-                    <StackPanel x:ConnectionId='11' Orientation="Vertical" Tag="arm1" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
-                        <Image Source="./Assets/Square150x150Logo.scale-200.png" />
-                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
+                <ListView Grid.Column="0" Padding="10" Background="LightBlue" IsTapEnabled="True">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <StackPanel x:ConnectionId='9' x:Name="draggableItem13" Tag="arm1" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Cabo" FontSize="32" HorizontalAlignment="Center"/>
+                        <Image Source="./Assets/Square150x150Logo.scale-200.png"/>
+                        <TextBlock Text="Precio: 10, Cantidad: 1" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='12' Orientation="Vertical" Tag="arm2" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='10' x:Name="draggableItem14" Tag="arm2" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Militar de alto rango" FontSize="32" HorizontalAlignment="Center"/>
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
                         <TextBlock Text="Precio: 1, Cantidad: 100" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                    <StackPanel x:ConnectionId='13' Orientation="Vertical" Tag="arm3" Margin="10" CanDrag="True"                                               >
-                        <TextBlock Text="XXXX" FontSize="32" HorizontalAlignment="Center"/>
+                    <StackPanel x:ConnectionId='11' x:Name="draggableItem15" Tag="arm3" Orientation="Vertical" Margin="10" CanDrag="True"                                               >
+                        <TextBlock Text="Armería" FontSize="32" HorizontalAlignment="Center" CanDrag="True" />
                         <Image Source="./Assets/Square150x150Logo.scale-200.png" />
-                        <TextBlock Text="Precio: 2, Cantidad: 4" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Precio: 3, Cantidad: 8" FontSize="16" HorizontalAlignment="Center"/>
                     </StackPanel>
-                </StackPanel>
+                    <Canvas x:ConnectionId='12' x:Name="redCanvas4" Background="LightYellow" AllowDrop="True"                                                     Width="400" Height="600">
+                        <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS" HorizontalAlignment="Left" Height="39" Canvas.Top="240" VerticalAlignment="Top" Canvas.Left="36"/>
+                    </Canvas>
+                </ListView>
             </PivotItem>
         </Pivot>
 
@@ -144,40 +185,38 @@
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/doge.png" Height="21" Width="28" />
-                <TextBlock x:ConnectionId='9' x:Name="valorCoins" Text="100" FontSize="20"/>
+                <TextBlock x:ConnectionId='8' x:Name="valorCoins" Text="100" FontSize="20"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/bolt.png" Height="21" Width="30"/>
-                <TextBlock x:ConnectionId='8' x:Name="valorElectricidad" Text="100" FontSize="20"/>
+                <TextBlock x:ConnectionId='7' x:Name="valorElectricidad" Text="100" FontSize="20"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/waterDrop.png" Height="21" Width="26" />
-                <TextBlock x:ConnectionId='7' x:Name="valorAgua" Text="100" FontSize="20"/>
+                <TextBlock x:ConnectionId='6' x:Name="valorAgua" Text="100" FontSize="20"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/Assets/crystals.png" Height="21" Width="27" />
-                <TextBlock x:ConnectionId='6' x:Name="valorCristales" Text="100" FontSize="20"/>
+                <TextBlock x:ConnectionId='5' x:Name="valorCristales" Text="100" FontSize="20"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <Image Source="/MilitarIcon.png" Height="21" />
-                <TextBlock x:ConnectionId='5' x:Name="valorMilitar" Text="100" FontSize="20"/>
+                <TextBlock x:ConnectionId='4' x:Name="valorMilitar" Text="100" FontSize="20"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="0,0,16,0">
                 <SymbolIcon Symbol="Contact" />
-                <TextBlock x:ConnectionId='4'  x:Name="valorPersonas" Text="100" FontSize="20"/>
+                <TextBlock x:ConnectionId='3'  x:Name="valorPersonas" Text="100" FontSize="20"/>
             </StackPanel>
         </StackPanel>
 
 
-        <Canvas x:ConnectionId='2' x:Name="redCanvas" Background="Red" Margin="0,714,10,150" AllowDrop="True"                                                    >
-            <TextBlock Text="ARRASTRA AQUÍ LOS EDIFICIOS PARA COMPRARLOS"/>
-        </Canvas>
-        <Button x:ConnectionId='3'
+
+        <Button x:ConnectionId='2'
             x:Name="BackButton"
             Style="{StaticResource NavigationBackButtonNormalStyle}"
                                                               

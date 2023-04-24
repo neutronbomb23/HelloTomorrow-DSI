@@ -9,20 +9,62 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <!-- Aquí es donde agregaremos el estilo -->
+        <Style TargetType="ContentDialog" x:Key="CustomContentDialogStyle">
+            <Setter Property="Background" Value="#FF3B3F42"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="TitleTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="Button" x:Key="CustomDialogContentButtonStyle">
+            <Setter Property="Background" Value="#FF62707D"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
 
-    <Grid x:ConnectionId='2' x:Name="MG" Opacity="1">
-        <Image x:ConnectionId='3' x:Name="imi" Source="/Assets/moon1.jpg" Stretch="Fill" Opacity="0.5"/>
+        <Style TargetType="ListBox" x:Key="CustomDialogListBoxStyle">
+            <Setter Property="Background" Value="#FF1E2124"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
 
-        <StackPanel>
+    </Page.Resources>
+    <Grid x:ConnectionId='3' x:Name="MG" Opacity="1">
+        <Image x:ConnectionId='4' x:Name="imi" Source="/Assets/moon1.jpg" Stretch="Fill" Opacity="0.5"/>
+
+        <StackPanel Margin="10,0,0,10">
             <TextBlock Text="Volume" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='7' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
+            <Slider x:ConnectionId='6' x:Name="volume_Changed" Minimum="0" Maximum="100" Value="50" Width="500"                                    />
             <TextBlock Text="Brightness" HorizontalAlignment="Center" Foreground="AliceBlue" FontSize="50px"/>
-            <Slider x:ConnectionId='8' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
-            <ListView x:ConnectionId='9' x:Name="ListViewSongs" Visibility="Collapsed"/>
-
+            <Slider x:ConnectionId='7' x:Name="brillo_Changed" Minimum="20" Maximum="100" Value="50" Width="500"                                            />
+            <ListView x:ConnectionId='8' x:Name="ListViewSongs" Visibility="Collapsed"/>
+            <Button x:ConnectionId='9' x:Name="ElegirCancionButton"
+        Content="Elegir canción del juego"
+        Background="Transparent"
+                                         
+        Width="301"
+        Height="70"
+                    HorizontalAlignment="Stretch"
+        FontSize="25px"/>
+            <Button x:ConnectionId='10' x:Name="ElegirCancionPersonalizada"
+        Content="Importa tu canción"
+        Background="Transparent"
+                    HorizontalAlignment="Stretch"
+                                                
+        Width="301"
+        Height="70"
+        FontSize="25px"/>
         </StackPanel>
 
-        <Button x:ConnectionId='4'
+
+        <Button x:ConnectionId='5'
           x:Name="BackButton"
           Style="{StaticResource NavigationBackButtonNormalStyle}"
                                                             
@@ -35,21 +77,7 @@
             FontSize="40px"
                                     
             />
-        <Button x:ConnectionId='5' x:Name="ElegirCancionButton"
-        Content="Elegir canción del juego"
-        Background="Transparent"
-                                         
-        Width="301"
-        Height="70"
-        FontSize="25px" Margin="449,0,0,0"/>
 
-        <Button x:ConnectionId='6' x:Name="ElegirCancionPersonalizada"
-        Content="Importa tu canción"
-        Background="Transparent"
-                                                
-        Width="301"
-        Height="70"
-        FontSize="25px" Margin="850,0,0,0"/>
 
     </Grid>
 </Page>

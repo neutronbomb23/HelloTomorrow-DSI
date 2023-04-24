@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj": {}
+    "C:\\Users\\Dorjee\\Desktop\\DSI\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj": {
+    "C:\\Users\\Dorjee\\Desktop\\DSI\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
+        "projectUniqueName": "C:\\Users\\Dorjee\\Desktop\\DSI\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
         "projectName": "G5DSI",
-        "projectPath": "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
+        "projectPath": "C:\\Users\\Dorjee\\Desktop\\DSI\\HelloTomorrow-DSI\\G5DSI\\G5DSI.csproj",
         "packagesPath": "C:\\Users\\Dorjee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dorjee\\Documents\\GitHub\\HelloTomorrow-DSI\\G5DSI\\obj\\",
+        "outputPath": "C:\\Users\\Dorjee\\Desktop\\DSI\\HelloTomorrow-DSI\\G5DSI\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

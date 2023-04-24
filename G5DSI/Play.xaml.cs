@@ -162,12 +162,19 @@ namespace G5DSI {
 
         private async void ElegirCancionButton_Click(object sender, RoutedEventArgs e)
         {
+            var listBox = new ListBox { ItemsSource = new List<string> { "Settings", "Controls", "Menu" }, Style = (Style)Resources["CustomDialogListBoxStyle"] };
+
             var dialog = new ContentDialog
             {
-                Title = "Acciones",            
+                Title = "Acciones",
+                Content = listBox,
                 PrimaryButtonText = "Settings",
                 SecondaryButtonText = "Controls",
-                CloseButtonText = "Menu"
+                CloseButtonText = "Menu",
+                Style = (Style)Resources["CustomContentDialogStyle"],
+                PrimaryButtonStyle = (Style)Resources["CustomDialogContentButtonStyle"],
+                SecondaryButtonStyle = (Style)Resources["CustomDialogContentButtonStyle"],
+                CloseButtonStyle = (Style)Resources["CustomDialogContentButtonStyle"]
             };
 
             var result = await dialog.ShowAsync();
@@ -179,9 +186,11 @@ namespace G5DSI {
             {
                 Frame.Navigate(typeof(Controls));
             }
-            else {
+            else
+            {
                 Frame.Navigate(typeof(MainPage));
             }
         }
+
     }
 }
